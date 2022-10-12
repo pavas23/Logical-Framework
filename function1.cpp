@@ -1,6 +1,11 @@
 #include<iostream>
 using namespace std;
 
+/*
+<------------------------------------------------------------------------------------------------------------>
+Linked List implementation
+<------------------------------------------------------------------------------------------------------------>
+*/
 // class for creating nodes of the linked list
 class Node{
     public:
@@ -91,6 +96,11 @@ class LinkedList{
 
          }
 };
+/*
+<------------------------------------------------------------------------------------------------------------>
+Stack implementation
+<------------------------------------------------------------------------------------------------------------>
+*/
 // stack implemented using linked list
 class Stack{
     LinkedList ll;
@@ -248,9 +258,76 @@ void infixToPrefix(){
     }
     cout<<endl;
 }
+class BinaryTreeNode{
+    public:
+        char data;
+    BinaryTreeNode* left;
+    BinaryTreeNode* right;
+    BinaryTreeNode(char data){
+        this.data = data;
+        left = NULL;
+        right = NULL;
+    }
+}
+/*
+<------------------------------------------------------------------------------------------------------------>
+Task 2:
+Write a function to convert the prefix expression into a rooted binary parse tree. 
+<------------------------------------------------------------------------------------------------------------>
+*/
+BinaryTreeNode* prefixToParseTreeHelper(BinaryTreeNode* root,char leftSubTree,string rightSubTree){
+    if(root == NULL){
+        return NULL;
+    }
+    if(leftSubTree == ''){
+        BinaryTreeNode* right(rightSubTree[0]);
+        root->left = NULL;
+        root->right = right;
+        return root;
+    }
+    if(rightSubTree == ""){
+        BinaryTreeNode* left(leftSubTree);
+        root->left = left;
+        root->right = NULL;
+        return root;
+    }
+    BinaryTreeNode* leftRootOld(leftSubTree);
+    BinaryTreeNode* rightRootOld(rightSubTree[0]);
+    BinaryTreeNode* leftRoot = prefixToParseTreeHelper(leftRootOld,'',"");
+    string rightSubTreeNew;
+    for(int i=2;i<rightSubTree.size();i++){
+        rightSubTreeNew[i-2] = rightSubTree[i];
+    }
+    BinaryTreeNode* rightRoot = prefixToParseTreeHelper(rightRootOld,rightSubTree[1],rightSubTreeNew);
+    root->left = leftRoot;
+    root->right = rightRoot;
+    return root;
+}
+BinaryTreeNode* prefixToParseTree(string prefixInput){
+    if(prefixInput=""){
+        return;
+    }
+    char rootData = prefixInput[0];
+    BinaryTreeNode* root(rootData);
+    char leftSubTree = prefixInput[1];
+    string rightSubTree;
+    for(int i=2;i<prefixInput.size();i++){
+        rightSubTree[i-2] = prefixInput[i];
+    }
+    root =  prefixToParseTreeHelper(root,leftSubTree,rightSubTree);
+    return root;
+}
+
+
+
+
+
+
+
 
 int main(void){
-    infixToPrefix();
+    BinaryTreeNode* root = prefixToParseTree("+a+b+*cd+fg");
+    cout<<root->data<<endl;
     return 0;
 }
 
