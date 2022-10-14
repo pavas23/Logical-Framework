@@ -27,9 +27,10 @@ and evaluate and print its truth table
     
 ## Screenshots
 
-![Output](https://user-images.githubusercontent.com/97559428/195829237-832f111c-f2ba-4738-83c1-4909feea4884.png)
+![Output](https://user-images.githubusercontent.com/97559428/195933049-2112923e-a3f6-4f99-9b2a-7f089a0d1098.png)
 
 ## Authors
+
 
 - [Pavas Garg](https://www.github.com/pavas23)
 - [Saksham Bajaj](https://github.com/SakshamBajaj18)
