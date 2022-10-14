@@ -25,6 +25,10 @@ and evaluate and print its truth table
   open index.html
 ```
     
+## Screenshots
+
+![Output](https://user-images.githubusercontent.com/97559428/195829237-832f111c-f2ba-4738-83c1-4909feea4884.png)
+
 ## Authors
 
 - [Pavas Garg](https://www.github.com/pavas23)
@@ -32,8 +36,5 @@ and evaluate and print its truth table
 - [Murari Karthik](https://github.com/Murari-Karthik)
 - [Amit Kolasani](https://github.com/AmitKolasani)
 
-## Screenshots
-
-![Output](https://user-images.githubusercontent.com/97559428/195829237-832f111c-f2ba-4738-83c1-4909feea4884.png)
 
 
