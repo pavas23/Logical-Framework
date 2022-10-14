@@ -17,6 +17,14 @@ and evaluate and print its truth table
 
 
 
+## Installation
+
+
+```bash
+  navigate to html folder
+  open index.html
+```
+    
 ## Authors
 
 - [Pavas Garg](https://www.github.com/pavas23)
