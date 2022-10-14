@@ -15,3 +15,11 @@ and evaluate and print its truth table
 - C++
 - Doxygen
 
+
+
+## Authors
+
+- [Pavas Garg](https://www.github.com/pavas23)
+- [Saksham Bajaj](https://github.com/SakshamBajaj18)
+- [Murari Karthik](https://github.com/Murari-Karthik)
+- [Amit Kolasani](https://github.com/AmitKolasani)
