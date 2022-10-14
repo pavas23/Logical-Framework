@@ -128,10 +128,12 @@ Write a function to convert the infix propositional logic expression into a pref
 expression.
 <------------------------------------------------------------------------------------------------------------>
 */
-void infixToPrefix(){
+string infixToPrefix(){
+    cout<<"*************************************************************************"<<endl<<endl;
     cout<<"Enter the infix expression: ";
     string s;
     cin>>s;
+    cout<<endl;
     int len = s.size();
 
     char v[len];
@@ -240,8 +242,6 @@ void infixToPrefix(){
         j++;
         stack.pop();
     }
-    cout<<"The prefix expression for the given infix expression is:";
-
     // as the display array length included brackets also so final length will without brackets will
     // be less than len so count the final length
     int count = 0;
@@ -253,10 +253,11 @@ void infixToPrefix(){
     }
 
     // now reverse the postfix form to obtain the prefix form
+    string prefixStr;
     for(int i=count-1;i>=0;i--){
-        cout<<display[i];
+        prefixStr  += display[i];
     }
-    cout<<endl;
+    return prefixStr;
 }
 
 /*
@@ -280,23 +281,28 @@ class BinaryTreeNode{
             right = NULL;
         }
 };
-BinaryTreeNode* prefixToParseTree(string prefixInput, int i){
+BinaryTreeNode* prefixToParseTree(string prefixInput, int* i){
     // if string is empty then root points to NULL which is the base case
     if(prefixInput.size() == 0){
         return NULL;
     }
-    if(i==prefixInput.size()){
+    if(*i==prefixInput.size()){
         return NULL;
     }
-    BinaryTreeNode* root = new BinaryTreeNode(prefixInput[i]);
-    i++;
-    if(root->data == '~' || root->data == '*' || root->data == '+' || root->data == '>'){
-        BinaryTreeNode* leftRoot = prefixToParseTree(prefixInput,i);
-        int j = i+1;
-        BinaryTreeNode* rightRoot = prefixToParseTree(prefixInput,j);
+    BinaryTreeNode* root = new BinaryTreeNode(prefixInput[*i]);
+    (*i)++;
+    int *ptr = i;
+    if(root->data == '*' || root->data == '+' || root->data == '>'){
+        BinaryTreeNode* leftRoot = prefixToParseTree(prefixInput,ptr);
+        BinaryTreeNode* rightRoot = prefixToParseTree(prefixInput,ptr);
         root->left = leftRoot;
         root->right = rightRoot;
         return root;
+    }
+    else if(root->data == '~'){
+        BinaryTreeNode* rightRoot = prefixToParseTree(prefixInput,ptr);
+        root->left = NULL;
+        root->right = rightRoot;
     }
     return root;
 }
@@ -367,9 +373,109 @@ int heightOfParseTree(BinaryTreeNode* root){
     }
 }
 
+/*
+<------------------------------------------------------------------------------------------------------------>
+Task 5:
+Write a function to evaluate the truth value of a propositional logic formula, given the truth values of
+each propositional atom by traversing the tree in a bottom up fashion. 
+<------------------------------------------------------------------------------------------------------------>
+*/
+bool* takeTruthValueOfPropositionalAtoms(string prefix){
+    int len = prefix.size();
+    int numOfOperators=0;
+    for(int i=0;i<len;i++){
+        if(prefix[i] == '~' || prefix[i] == '*' || prefix[i] == '+' || prefix[i] =='>'){
+            numOfOperators++;
+        }
+    }
+    int numOfAtoms = len - numOfOperators;
+    bool truthArray[numOfAtoms];
+    cout<<"Enter the truth value of each propositional atom in order: "<<endl<<endl;
+    for(int i=0;i<numOfAtoms;i++){
+        cout<<"Enter the truth value of atom "<<i+1<<" (T/t for True and F/f for False)"<<endl;
+        char ans;
+        cin>>ans;
+        if(ans == 'T' || ans == 't'){
+            truthArray[i] = true;
+        }
+        else if(ans == 'F' || ans == 'f'){
+            truthArray[i] = false;
+        }
+        else{
+            while(ans != 'F' || ans != 'f' || ans == 'T' || ans != 't'){
+                cout<<"Please enter a valid symbol:"<<endl;
+                cin>>ans;
+                if(ans == 'T' || ans == 't'){
+                    truthArray[i] = true;
+                    break;
+                }
+                else if(ans == 'F' || ans == 'f'){
+                    truthArray[i] = false;
+                    break;
+                }
+            }
+        }
+    }
+    cout<<endl;
+    return truthArray;
+}
+
+bool truthValue(BinaryTreeNode* root, bool* truthArray,int*i){
+    int *ptr = i;
+    if(root == NULL){
+        return true;
+    }
+    if(root->left == NULL && root->right == NULL){
+        ptr++;
+        return *(ptr-1);
+    }
+    if(root->left == NULL && root->right != NULL){
+        bool rightAns = truthValue(root->right,truthArray,ptr+1);
+        // only negation can be there as root data
+        return !rightAns;
+    }
+    else{
+        bool leftAns = truthValue(root->left,truthArray,ptr);
+        bool rightAns = truthValue(root->right,truthArray,ptr);
+        if(root->data == '+'){
+            return (leftAns||rightAns);
+        }
+        else if(root->data == '*'){
+            return (leftAns&&rightAns);
+        }
+        else if(root->data == '>'){
+            if(leftAns == true && rightAns == false){
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+    }
+    return false;
+
+}
 int main(void){
-    BinaryTreeNode* root = prefixToParseTree("+a*bc",0);
-    cout<<heightOfParseTree(root);
+    string prefix = infixToPrefix();
+    cout<<"The prefix expression for the given infix expression is: "<<prefix<<endl<<endl;
+    int i = 0;
+    BinaryTreeNode* root = prefixToParseTree(prefix,&i);
+    int height = heightOfParseTree(root);
+    cout<<"The Inorder traversal of the Parse Tree is: ";
+    InorderTraversalOfParseTree(root);
+    cout<<endl<<endl;
+    cout<<"The height of the Parse Tree is "<<height<<endl<<endl;
+    bool* truthArray = takeTruthValueOfPropositionalAtoms(prefix);
+    int *j=(int*)truthArray;
+    bool truthValueAns = truthValue(root,truthArray,j);
+    if(truthValueAns==1){
+        cout<<"The Truth Value of the given propositional logic is "<<"True"<<endl<<endl;
+    }
+    else{
+        cout<<"The Truth Value of the given propositional logic is "<<"False"<<endl<<endl;
+    }
+    cout<<"*************************************************************************"<<endl;
     return 0;
 }
+
 
