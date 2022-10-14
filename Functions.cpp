@@ -3,7 +3,7 @@ using namespace std;
 
 /*
 <------------------------------------------------------------------------------------------------------------>
-Linked List implementation
+Linked List Implementation
 <------------------------------------------------------------------------------------------------------------>
 */
 // class for creating nodes of the linked list
@@ -401,28 +401,41 @@ string takeTruthValueOfPropositionalAtoms(string prefix){
     int numOfAtoms = len - numOfOperators;
     // will make a boolean truthArray of size = number of atoms in prefix formula
     bool truthArray[numOfAtoms];
+    string atoms;
+    int j=0;
+    for(int i=0;i<len;i++){
+        if(prefix[i] != '~' && prefix[i] != '*' && prefix[i] !='>' && prefix[i] != '+'){
+            atoms[j] = prefix[i];
+            j++;
+        }
+    }
     cout<<"Enter the truth value of each propositional atom in order: "<<endl<<endl;
+    int k=0;
     for(int i=0;i<numOfAtoms;i++){
-        cout<<"Enter the truth value of atom "<<i+1<<" (T/t for True and F/f for False)"<<endl;
+        cout<<"Enter the truth value of atom "<<atoms[k]<<" (T/t for True and F/f for False)"<<endl;
         char ans;
         cin>>ans;
         if(ans == 'T' || ans == 't'){
             truthArray[i] = true;
+            k++;
         }
         else if(ans == 'F' || ans == 'f'){
             truthArray[i] = false;
+            k++;
         }
         else{
             // if user enters anything except 'T/t/F/f' then we will ask user to enter valid symbol until the //user enters a valid char
             while(ans != 'F' || ans != 'f' || ans == 'T' || ans != 't'){
-                cout<<"Please enter a valid symbol:"<<endl;
+                cout<<"Please enter a valid symbol for atom "<<atoms[k]<<endl;
                 cin>>ans;
                 if(ans == 'T' || ans == 't'){
                     truthArray[i] = true;
+                    k++;
                     break;
                 }
                 else if(ans == 'F' || ans == 'f'){
                     truthArray[i] = false;
+                    k++;
                     break;
                 }
             }
