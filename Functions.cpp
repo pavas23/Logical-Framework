@@ -266,6 +266,7 @@ Task 2:
 Write a function to convert the prefix expression into a rooted binary parse tree. 
 <------------------------------------------------------------------------------------------------------------>
 */
+// to create a BinaryTreeNode which contains data,left pointer and a right pointer
 class BinaryTreeNode{
     public:
         char data;
@@ -289,9 +290,12 @@ BinaryTreeNode* prefixToParseTree(string prefixInput, int* i){
     if(*i==prefixInput.size()){
         return NULL;
     }
+    // will create a BinaryTreeNode for each char in prefixInput string
     BinaryTreeNode* root = new BinaryTreeNode(prefixInput[*i]);
+    // to increment the pointer so that we can traverse the whole string
     (*i)++;
     int *ptr = i;
+    // if root->data contains *,+,> operators so a well formed formula will have both left and right subtrees
     if(root->data == '*' || root->data == '+' || root->data == '>'){
         BinaryTreeNode* leftRoot = prefixToParseTree(prefixInput,ptr);
         BinaryTreeNode* rightRoot = prefixToParseTree(prefixInput,ptr);
@@ -299,6 +303,7 @@ BinaryTreeNode* prefixToParseTree(string prefixInput, int* i){
         root->right = rightRoot;
         return root;
     }
+    // if root->data == '~' means only one side of tree is there which should be right side and root->left == //NULL
     else if(root->data == '~'){
         BinaryTreeNode* rightRoot = prefixToParseTree(prefixInput,ptr);
         root->left = NULL;
@@ -315,6 +320,7 @@ parse tree.
 <------------------------------------------------------------------------------------------------------------>
 */
 
+// for Inorder traversal we need to first print leftSubtree then root->data and then rightSubtree
 void InorderTraversalOfParseTree(BinaryTreeNode* root){
     if(root == NULL){
         return;
@@ -348,6 +354,8 @@ Write a function to compute the height of a parse tree.
 <------------------------------------------------------------------------------------------------------------>
 */
 
+/* height of a parseTree can be found by finding max of height of leftSubTree and rightSubTree and adding 1  because of root element
+*/
 int heightOfParseTree(BinaryTreeNode* root){
     if(root == NULL){
         return 0;
@@ -380,7 +388,9 @@ Write a function to evaluate the truth value of a propositional logic formula, g
 each propositional atom by traversing the tree in a bottom up fashion. 
 <------------------------------------------------------------------------------------------------------------>
 */
-bool* takeTruthValueOfPropositionalAtoms(string prefix){
+
+// this function will take truth values (T or F) for each atom and return a string
+string takeTruthValueOfPropositionalAtoms(string prefix){
     int len = prefix.size();
     int numOfOperators=0;
     for(int i=0;i<len;i++){
@@ -389,6 +399,7 @@ bool* takeTruthValueOfPropositionalAtoms(string prefix){
         }
     }
     int numOfAtoms = len - numOfOperators;
+    // will make a boolean truthArray of size = number of atoms in prefix formula
     bool truthArray[numOfAtoms];
     cout<<"Enter the truth value of each propositional atom in order: "<<endl<<endl;
     for(int i=0;i<numOfAtoms;i++){
@@ -402,6 +413,7 @@ bool* takeTruthValueOfPropositionalAtoms(string prefix){
             truthArray[i] = false;
         }
         else{
+            // if user enters anything except 'T/t/F/f' then we will ask user to enter valid symbol until the //user enters a valid char
             while(ans != 'F' || ans != 'f' || ans == 'T' || ans != 't'){
                 cout<<"Please enter a valid symbol:"<<endl;
                 cin>>ans;
@@ -417,26 +429,31 @@ bool* takeTruthValueOfPropositionalAtoms(string prefix){
         }
     }
     cout<<endl;
-    return truthArray;
+    // this will copy the truth values to a string which will be returned from the function
+    string truthString;
+    for(int i=0;i<numOfAtoms;i++){
+        truthString[i] = truthArray[i];
+    }
+    return truthString;
 }
 
-bool truthValue(BinaryTreeNode* root, bool* truthArray,int*i){
-    int *ptr = i;
+// this function finally evaluates the truthValue of given expression using recursion.
+bool truthValue(BinaryTreeNode* root, string truthString,int* ptr){
     if(root == NULL){
         return true;
     }
     if(root->left == NULL && root->right == NULL){
-        ptr++;
-        return *(ptr-1);
+        (*ptr)++;
+        return truthString[(*ptr)-1];
     }
     if(root->left == NULL && root->right != NULL){
-        bool rightAns = truthValue(root->right,truthArray,ptr+1);
+        bool rightAns = truthValue(root->right,truthString,ptr);
         // only negation can be there as root data
         return !rightAns;
     }
     else{
-        bool leftAns = truthValue(root->left,truthArray,ptr);
-        bool rightAns = truthValue(root->right,truthArray,ptr);
+        bool leftAns = truthValue(root->left,truthString,ptr);
+        bool rightAns = truthValue(root->right,truthString,ptr);
         if(root->data == '+'){
             return (leftAns||rightAns);
         }
@@ -455,19 +472,37 @@ bool truthValue(BinaryTreeNode* root, bool* truthArray,int*i){
     return false;
 
 }
+
+/*
+<------------------------------------------------------------------------------------------------------------>
+Main Function
+<------------------------------------------------------------------------------------------------------------>
+*/
+
 int main(void){
+
+    // converting the infix expression to prefix
     string prefix = infixToPrefix();
     cout<<"The prefix expression for the given infix expression is: "<<prefix<<endl<<endl;
+
+    // converting the prefix expression to ParseTree
     int i = 0;
     BinaryTreeNode* root = prefixToParseTree(prefix,&i);
+
+    // finding height of ParseTree
     int height = heightOfParseTree(root);
+    cout<<"The height of the Parse Tree is "<<height<<endl<<endl;
+
+    // printing the Inorder Traversal of ParseTree
     cout<<"The Inorder traversal of the Parse Tree is: ";
     InorderTraversalOfParseTree(root);
     cout<<endl<<endl;
-    cout<<"The height of the Parse Tree is "<<height<<endl<<endl;
-    bool* truthArray = takeTruthValueOfPropositionalAtoms(prefix);
-    int *j=(int*)truthArray;
-    bool truthValueAns = truthValue(root,truthArray,j);
+
+    // finding the truth value of expression
+    string truthString = takeTruthValueOfPropositionalAtoms(prefix);
+    cout<<endl;
+    int j =0;
+    bool truthValueAns = truthValue(root,truthString,&j);
     if(truthValueAns==1){
         cout<<"The Truth Value of the given propositional logic is "<<"True"<<endl<<endl;
     }
