@@ -21,6 +21,7 @@ and evaluate and print its truth table
 
 
 ```bash
+  run doxygen in terminal
   navigate to html folder
   open index.html
 ```
