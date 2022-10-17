@@ -27,7 +27,12 @@ and evaluate and print its truth table
     
 ## Screenshots
 
+![Output](https://user-images.githubusercontent.com/97559428/196146174-112dd13a-f8db-4336-99c9-4bc671054789.png)
+<br/>
+<br/>
 ![Output](https://user-images.githubusercontent.com/97559428/195933049-2112923e-a3f6-4f99-9b2a-7f089a0d1098.png)
+
+
 
 ## Authors
 
@@ -36,6 +41,9 @@ and evaluate and print its truth table
 - [Saksham Bajaj](https://github.com/SakshamBajaj18)
 - [Murari Karthik](https://github.com/Murari-Karthik)
 - [Amit Kolasani](https://github.com/AmitKolasani)
+
+
+
 
 
 
