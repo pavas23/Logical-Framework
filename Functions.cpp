@@ -6,7 +6,20 @@ using namespace std;
 Linked List Implementation
 <------------------------------------------------------------------------------------------------------------>
 */
-// class for creating nodes of the linked list
+/// This class is used for creating nodes of the Linked List.
+/// @see LinkedList
+///
+/// > Each node has a **char** data and a **next** pointer which points to the next node of the given
+/// > LinkedList . 
+/// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.cpp
+///  Node* next;
+/// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/// ###Node()
+/// > This constructor is the default constructor which sets data to '0' and next points to **NULL**.
+/// 
+/// ###Node(char data)
+/// > This constructor sets the data to the char recieved as function parameter and next points to **NULL**.
+
 class Node{
     public:
         char data;
@@ -21,6 +34,7 @@ class Node{
         }
 
 };
+
 /// This class is used to create a *Linked List* which stores data of **char** datatype.
 /// ###LinkedList()
 /// > This constructor is used to set the head pointer to **NULL**.
@@ -31,28 +45,29 @@ class Node{
 /// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.cpp
 /// Node* newNode = new Node(data);
 /// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/// > Time Complexity of this function is **O(n)**
+/// > Time Complexity of this function is O(n).
 /// > 
-/// > Space Complexity of this function is **O(1)** 
+/// > Space Complexity of this function is O(1).
 ///
 /// ###deleteLastNode()
 /// > This function is used to delete the last node of the given linked list by making the next
 /// > pointer of second last node to **NULL** so the link between second last and last node breaks.
-/// > - Time Complexity of this function is **O(n)**
+/// > - Time Complexity of this function is O(n).
 ///
 /// ###printLL()
 /// > This function is used to print the given linked list by iterating over the nodes until the next
 /// > pointer of any node points to **NULL**.
-/// > - Time Complexity of this function is **O(n)**
+/// > - Time Complexity of this function is O(n).
 ///
 /// ###size()
 /// > This function returns an integer which gives the number of nodes in the given linked list.
 /// >
-/// > - Time Complexity of this function is **O(n)**
+/// > - Time Complexity of this function is O(n).
 ///
 /// ###lastNode()
 /// > This functions return a **char** value which is the data of the last node in the linked list.
-/// > - Time Complexity of this function is **O(n)**
+/// > - Time Complexity of this function is O(n).
+
 class LinkedList{
     Node* head;
     public:
@@ -345,7 +360,6 @@ BinaryTreeNode* prefixToParseTree(string prefixInput, int* i){
     }
     return root;
 }
-
 /*
 <------------------------------------------------------------------------------------------------------------>
 Task 3:
