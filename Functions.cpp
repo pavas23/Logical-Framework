@@ -21,6 +21,38 @@ class Node{
         }
 
 };
+/// This class is used to create a *Linked List* which stores data of **char** datatype.
+/// ###LinkedList()
+/// > This constructor is used to set the head pointer to **NULL**.
+///
+/// ###insertNode(char data)
+/// > This function accepts **data** as function parameter and links this **newNode** to the last 
+/// > of linked list by iterating over the list until it reaches the end.
+/// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.cpp
+/// Node* newNode = new Node(data);
+/// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/// > Time Complexity of this function is **O(n)**
+/// > 
+/// > Space Complexity of this function is **O(1)** 
+///
+/// ###deleteLastNode()
+/// > This function is used to delete the last node of the given linked list by making the next
+/// > pointer of second last node to **NULL** so the link between second last and last node breaks.
+/// > - Time Complexity of this function is **O(n)**
+///
+/// ###printLL()
+/// > This function is used to print the given linked list by iterating over the nodes until the next
+/// > pointer of any node points to **NULL**.
+/// > - Time Complexity of this function is **O(n)**
+///
+/// ###size()
+/// > This function returns an integer which gives the number of nodes in the given linked list.
+/// >
+/// > - Time Complexity of this function is **O(n)**
+///
+/// ###lastNode()
+/// > This functions return a **char** value which is the data of the last node in the linked list.
+/// > - Time Complexity of this function is **O(n)**
 class LinkedList{
     Node* head;
     public:
@@ -130,7 +162,7 @@ expression.
 */
 string infixToPrefix(){
     cout<<"*************************************************************************"<<endl<<endl;
-    cout<<"Enter the infix expression: ";
+    cout<<"Enter The Infix Expression: ";
     string s;
     cin>>s;
     cout<<endl;
@@ -266,7 +298,9 @@ Task 2:
 Write a function to convert the prefix expression into a rooted binary parse tree. 
 <------------------------------------------------------------------------------------------------------------>
 */
-// to create a BinaryTreeNode which contains data,left pointer and a right pointer
+/// This class is used to create a Binary Tree Node which contains data of char datatype.
+/// It has two pointers left which points to left BinaryTreeNode and a right to point to the right   
+/// BinaryTreeNode
 class BinaryTreeNode{
     public:
         char data;
