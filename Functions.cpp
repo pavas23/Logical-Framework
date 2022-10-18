@@ -457,10 +457,25 @@ string takeTruthValueOfPropositionalAtoms(string prefix){
             j++;
         }
     }
+    string uniqueAtoms;
+    string extraTerms;
+    for(int i=0;i<numOfAtoms;i++){
+        int flag = 0;
+        for(int j=0;j<uniqueAtoms.size();j++){
+            if(atoms[i] == uniqueAtoms[j]){
+                extraTerms += atoms[i];
+                flag = 1;
+                break;
+            }
+        }
+        if(flag == 0){
+            uniqueAtoms += atoms[i];
+        }
+    }
     cout<<"Enter the truth value of each propositional atom in order: "<<endl<<endl;
     int k=0;
-    for(int i=0;i<numOfAtoms;i++){
-        cout<<"Enter the truth value of atom "<<atoms[k]<<" (T/t for True and F/f for False)"<<endl;
+    for(int i=0;i<uniqueAtoms.size();i++){
+        cout<<"Enter the truth value of atom "<<uniqueAtoms[k]<<" (T/t for True and F/f for False)"<<endl;
         char ans;
         cin>>ans;
         if(ans == 'T' || ans == 't'){
@@ -474,7 +489,7 @@ string takeTruthValueOfPropositionalAtoms(string prefix){
         else{
             // if user enters anything except 'T/t/F/f' then we will ask user to enter valid symbol until the //user enters a valid char
             while(ans != 'F' || ans != 'f' || ans != 'T' || ans != 't'){
-                cout<<"Please enter a valid symbol for atom "<<atoms[k]<<endl;
+                cout<<"Please enter a valid symbol for atom "<<uniqueAtoms[k]<<endl;
                 cin>>ans;
                 if(ans == 'T' || ans == 't'){
                     truthArray[i] = true;
@@ -493,7 +508,12 @@ string takeTruthValueOfPropositionalAtoms(string prefix){
     // this will copy the truth values to a string which will be returned from the function
     string truthString;
     for(int i=0;i<numOfAtoms;i++){
-        truthString += truthArray[i];
+        for(int j=0;j<uniqueAtoms.size();j++){
+            if(atoms[i] == uniqueAtoms[j]){
+                truthString += truthArray[j];
+                break;
+            }
+        }
     }
     return truthString;
 }
@@ -573,3 +593,4 @@ int main(void){
     cout<<"*************************************************************************"<<endl;
     return 0;
 }
+
