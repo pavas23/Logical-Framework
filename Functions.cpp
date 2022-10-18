@@ -473,7 +473,7 @@ string takeTruthValueOfPropositionalAtoms(string prefix){
         }
         else{
             // if user enters anything except 'T/t/F/f' then we will ask user to enter valid symbol until the //user enters a valid char
-            while(ans != 'F' || ans != 'f' || ans == 'T' || ans != 't'){
+            while(ans != 'F' || ans != 'f' || ans != 'T' || ans != 't'){
                 cout<<"Please enter a valid symbol for atom "<<atoms[k]<<endl;
                 cin>>ans;
                 if(ans == 'T' || ans == 't'){
@@ -493,7 +493,7 @@ string takeTruthValueOfPropositionalAtoms(string prefix){
     // this will copy the truth values to a string which will be returned from the function
     string truthString;
     for(int i=0;i<numOfAtoms;i++){
-        truthString[i] = truthArray[i];
+        truthString += truthArray[i];
     }
     return truthString;
 }
@@ -516,10 +516,10 @@ bool truthValue(BinaryTreeNode* root, string truthString,int* ptr){
         bool leftAns = truthValue(root->left,truthString,ptr);
         bool rightAns = truthValue(root->right,truthString,ptr);
         if(root->data == '+'){
-            return (leftAns||rightAns);
+            return (leftAns|rightAns);
         }
         else if(root->data == '*'){
-            return (leftAns&&rightAns);
+            return (leftAns&rightAns);
         }
         else if(root->data == '>'){
             if(leftAns == true && rightAns == false){
@@ -573,5 +573,3 @@ int main(void){
     cout<<"*************************************************************************"<<endl;
     return 0;
 }
-
-
