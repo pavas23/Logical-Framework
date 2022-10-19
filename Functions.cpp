@@ -148,7 +148,20 @@ class LinkedList{
 Stack implementation
 <------------------------------------------------------------------------------------------------------------>
 */
-// stack implemented using linked list
+/// > This class is for implementing the Stack data structure using a linked list.
+/// ###push(data)
+/// > This function takes a char data and pushes it to the stack internally which is the node of the
+/// > linked list.
+/// 
+/// ###pop()
+/// > This function is used to delete the top element of the stack internally which is deleting the last node /// > of the linked list by calling deleteLastNode() function of the linked list.
+///
+/// ###size()
+/// > This function return the size of the linked list by calling the size function of the linked list.
+///
+/// ###top()
+/// > This function returns a char datatype which is the value of top element of the stack internally it
+/// calls the lastNode() function of the linked list.
 class Stack{
     LinkedList ll;
     public:
@@ -360,6 +373,36 @@ BinaryTreeNode* prefixToParseTree(string prefixInput, int* i){
     }
     return root;
 }
+int heightOfParseTree(BinaryTreeNode*); // function declaration
+
+// printing the level order Traversal of the parse tree
+// this function will print each level of the parse tree
+void printLevelOrderParseTreeHelper(BinaryTreeNode* root, int level){
+    if(root == NULL){
+        return;
+    }
+    if(level == 1){
+        // in this case only root is there
+        cout<<root->data;
+    }
+    else if(level>1){
+        // if level is greater than 1 then root is not there in that level, only left and right subtrees are ///there
+        printLevelOrderParseTreeHelper(root->left,level-1);
+        // we passed level-1 here as current level as for the original tree the level was equal to level but 
+        //for the subtree the level with reference to the left root and right root will be one less in that
+        //subtrees
+        printLevelOrderParseTreeHelper(root->right,level-1);
+    }
+}
+void printLevelOrderParseTree(BinaryTreeNode* root){
+    int height = heightOfParseTree(root);
+    // we are calling function printLevelOrderParseTreeHelper to print each level of the tree by passing i as //the current level value
+    for(int i=1;i<=height;i++){
+        printLevelOrderParseTreeHelper(root,i);
+        // after every level we print next level in a new line
+        cout<<endl;
+    }
+}
 /*
 <------------------------------------------------------------------------------------------------------------>
 Task 3:
@@ -569,6 +612,11 @@ int main(void){
     // converting the prefix expression to ParseTree
     int i = 0;
     BinaryTreeNode* root = prefixToParseTree(prefix,&i);
+
+    // printing the levelOrderTraversalOfParseTree
+    cout<<"The Parse Tree formed is (Level Order Traversal) "<<endl;
+    printLevelOrderParseTree(root);
+    cout<<endl;
 
     // finding height of ParseTree
     int height = heightOfParseTree(root);
