@@ -148,20 +148,22 @@ class LinkedList{
 Stack implementation
 <------------------------------------------------------------------------------------------------------------>
 */
-/// > This class is for implementing the Stack data structure using a linked list.
+/// > This class is for implementing the Stack data structure using a LinkedList.
+///
 /// ###push(data)
 /// > This function takes a char data and pushes it to the stack internally which is the node of the
 /// > linked list.
 /// 
 /// ###pop()
-/// > This function is used to delete the top element of the stack internally which is deleting the last node /// > of the linked list by calling deleteLastNode() function of the linked list.
+/// > This function is used to delete the top element of the stack internally which is deleting the last node
+/// > of the linked list by calling deleteLastNode() function of the linked list.
 ///
 /// ###size()
 /// > This function return the size of the linked list by calling the size function of the linked list.
 ///
 /// ###top()
 /// > This function returns a char datatype which is the value of top element of the stack internally it
-/// calls the lastNode() function of the linked list.
+/// > calls the lastNode() function of the linked list.
 class Stack{
     LinkedList ll;
     public:
@@ -491,7 +493,7 @@ string takeTruthValueOfPropositionalAtoms(string prefix){
     }
     int numOfAtoms = len - numOfOperators;
     // will make a boolean truthArray of size = number of atoms in prefix formula
-    bool truthArray[numOfAtoms];
+    // bool truthArray[numOfAtoms];
     string atoms;
     int j=0;
     for(int i=0;i<len;i++){
@@ -500,64 +502,59 @@ string takeTruthValueOfPropositionalAtoms(string prefix){
             j++;
         }
     }
-    string uniqueAtoms;
-    string extraTerms;
-    for(int i=0;i<numOfAtoms;i++){
-        int flag = 0;
-        for(int j=0;j<uniqueAtoms.size();j++){
-            if(atoms[i] == uniqueAtoms[j]){
-                extraTerms += atoms[i];
-                flag = 1;
-                break;
-            }
-        }
-        if(flag == 0){
-            uniqueAtoms += atoms[i];
-        }
+    int asciiArray[123];
+    for(int i=0;i<123;i++){
+        asciiArray[i] = -1;
     }
     cout<<"Enter the truth value of each propositional atom in order: "<<endl<<endl;
     int k=0;
-    for(int i=0;i<uniqueAtoms.size();i++){
-        cout<<"Enter the truth value of atom "<<uniqueAtoms[k]<<" (T/t for True and F/f for False)"<<endl;
-        char ans;
-        cin>>ans;
-        if(ans == 'T' || ans == 't'){
-            truthArray[i] = true;
-            k++;
+    for(int i=0;i<numOfAtoms;i++){
+        if(asciiArray[int(atoms[k])] == -1){
+            cout<<"Enter the truth value of atom "<<atoms[k]<<" (T/t for True and F/f for False)"<<endl;
+            char ans;
+            cin>>ans;
+            if(ans == 'T' || ans == 't'){
+                asciiArray[int(atoms[k])] = 1;
+                k++;
+            }
+            else if(ans == 'F' || ans == 'f'){
+                asciiArray[int(atoms[k])] = 0;
+                k++;
+            }
+            else{
+            // if user enters anything except 'T/t/F/f' then we will ask user to enter valid symbol until the //user enters a valid char
+                while(ans != 'F' || ans != 'f' || ans != 'T' || ans != 't'){
+                    cout<<"Please enter a valid symbol for atom "<<atoms[k]<<endl;
+                    cin>>ans;
+                    if(ans == 'T' || ans == 't'){
+                        asciiArray[int(atoms[k])] = 1;
+                        k++;
+                        break;
+                    }
+                    else if(ans == 'F' || ans == 'f'){
+                        asciiArray[int(atoms[k])] = 0;
+                        k++;
+                        break;
+                    }
+                }
         }
-        else if(ans == 'F' || ans == 'f'){
-            truthArray[i] = false;
-            k++;
         }
         else{
-            // if user enters anything except 'T/t/F/f' then we will ask user to enter valid symbol until the //user enters a valid char
-            while(ans != 'F' || ans != 'f' || ans != 'T' || ans != 't'){
-                cout<<"Please enter a valid symbol for atom "<<uniqueAtoms[k]<<endl;
-                cin>>ans;
-                if(ans == 'T' || ans == 't'){
-                    truthArray[i] = true;
-                    k++;
-                    break;
-                }
-                else if(ans == 'F' || ans == 'f'){
-                    truthArray[i] = false;
-                    k++;
-                    break;
-                }
-            }
+            k++;
         }
     }
     cout<<endl;
     // this will copy the truth values to a string which will be returned from the function
     string truthString;
     for(int i=0;i<numOfAtoms;i++){
-        for(int j=0;j<uniqueAtoms.size();j++){
-            if(atoms[i] == uniqueAtoms[j]){
-                truthString += truthArray[j];
-                break;
-            }
+        if(asciiArray[int(atoms[i])] == 1){
+            truthString += '1';
+        }
+        else if(asciiArray[int(atoms[i])] == 0){
+            truthString += '0';
         }
     }
+    cout<<truthString<<endl<<endl;
     return truthString;
 }
 
@@ -568,7 +565,12 @@ bool truthValue(BinaryTreeNode* root, string truthString,int* ptr){
     }
     if(root->left == NULL && root->right == NULL){
         (*ptr)++;
-        return truthString[(*ptr)-1];
+        if(truthString[(*ptr)-1]=='1'){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
     if(root->left == NULL && root->right != NULL){
         bool rightAns = truthValue(root->right,truthString,ptr);
