@@ -386,11 +386,11 @@ void printLevelOrderParseTreeHelper(BinaryTreeNode* root, int level){
         cout<<root->data;
     }
     else if(level>1){
-        // if level is greater than 1 then root is not there in that level, only left and right subtrees are ///there
-        printLevelOrderParseTreeHelper(root->left,level-1);
+        // if level is greater than 1 then root is not there in that level, only left and right subtrees are there
         // we passed level-1 here as current level as for the original tree the level was equal to level but 
         //for the subtree the level with reference to the left root and right root will be one less in that
         //subtrees
+        printLevelOrderParseTreeHelper(root->left,level-1);
         printLevelOrderParseTreeHelper(root->right,level-1);
     }
 }
