@@ -164,6 +164,7 @@ Stack implementation
 /// ###top()
 /// > This function returns a char datatype which is the value of top element of the stack internally it
 /// > calls the lastNode() function of the linked list.
+
 class Stack{
     LinkedList ll;
     public:
@@ -183,6 +184,7 @@ class Stack{
     }
 
 };
+
 /*
 <------------------------------------------------------------------------------------------------------------>
 Task 1:
@@ -190,6 +192,7 @@ Write a function to convert the infix propositional logic expression into a pref
 expression.
 <------------------------------------------------------------------------------------------------------------>
 */
+
 string infixToPrefix(){
     cout<<"*************************************************************************"<<endl<<endl;
     cout<<"Enter The Infix Expression: ";
@@ -331,6 +334,7 @@ Write a function to convert the prefix expression into a rooted binary parse tre
 /// This class is used to create a Binary Tree Node which contains data of char datatype.
 /// It has two pointers left which points to left BinaryTreeNode and a right to point to the right   
 /// BinaryTreeNode
+
 class BinaryTreeNode{
     public:
         char data;
@@ -390,8 +394,7 @@ void printLevelOrderParseTreeHelper(BinaryTreeNode* root, int level){
     else if(level>1){
         // if level is greater than 1 then root is not there in that level, only left and right subtrees are there
         // we passed level-1 here as current level as for the original tree the level was equal to level but 
-        //for the subtree the level with reference to the left root and right root will be one less in that
-        //subtrees
+        //for the subtree the level with reference to the left root and right root will be one less in that subtrees
         printLevelOrderParseTreeHelper(root->left,level-1);
         printLevelOrderParseTreeHelper(root->right,level-1);
     }
@@ -605,41 +608,64 @@ Main Function
 */
 
 int main(void){
+    char inputChar = 'y';
+    char menuOption;
+    while(inputChar == 'y' || inputChar == 'Y'){
+        // converting the infix expression to prefix
+        string prefix = infixToPrefix();
+        cout<<"The prefix expression for the given infix expression is: "<<prefix<<endl<<endl;
+        cout<<"Do you want to convert the prefix expression into a Binary Parse Tree (y/Y for yes and n/N for no)"<<endl;
+        cin>>menuOption;
+        cout<<endl;
+        if(menuOption == 'y' || menuOption == 'Y'){
+            // converting the prefix expression to ParseTree
+            int i = 0;
+            BinaryTreeNode* root = prefixToParseTree(prefix,&i);
 
-    // converting the infix expression to prefix
-    string prefix = infixToPrefix();
-    cout<<"The prefix expression for the given infix expression is: "<<prefix<<endl<<endl;
+            // printing the levelOrderTraversalOfParseTree
+            cout<<"The Parse Tree formed is (Level Order Traversal) "<<endl;
+            printLevelOrderParseTree(root);
+            cout<<endl;
 
-    // converting the prefix expression to ParseTree
-    int i = 0;
-    BinaryTreeNode* root = prefixToParseTree(prefix,&i);
-
-    // printing the levelOrderTraversalOfParseTree
-    cout<<"The Parse Tree formed is (Level Order Traversal) "<<endl;
-    printLevelOrderParseTree(root);
-    cout<<endl;
-
-    // finding height of ParseTree
-    int height = heightOfParseTree(root);
-    cout<<"The height of the Parse Tree is "<<height<<endl<<endl;
-
-    // printing the Inorder Traversal of ParseTree
-    cout<<"The Inorder traversal of the Parse Tree is: ";
-    InorderTraversalOfParseTree(root);
-    cout<<endl<<endl;
-
-    // finding the truth value of expression
-    string truthString = takeTruthValueOfPropositionalAtoms(prefix);
-    cout<<endl;
-    int j =0;
-    bool truthValueAns = truthValue(root,truthString,&j);
-    if(truthValueAns==1){
-        cout<<"The Truth Value of the given propositional logic is "<<"True"<<endl<<endl;
+            cout<<"Do you want to find height of Parse Tree (y/Y for yes and n/N for no)?"<<endl;
+            cin>>menuOption;
+            cout<<endl;
+            if(menuOption == 'y' || menuOption == 'Y'){
+                // finding height of ParseTree
+                int height = heightOfParseTree(root);
+                cout<<"The height of the Parse Tree is "<<height<<endl<<endl;
+            }
+            cout<<"Do you want to find Inorder Traversal of Parse Tree (y/Y for yes and n/N for no)?"<<endl;
+            cin>>menuOption;
+            cout<<endl;
+            if(menuOption == 'y' || menuOption == 'Y'){
+                // printing the Inorder Traversal of ParseTree
+                cout<<"The Inorder traversal of the Parse Tree is: ";
+                InorderTraversalOfParseTree(root);
+                cout<<endl<<endl;
+            }
+            cout<<"Do you want to find the Truth Value of the Parse Tree (y/Y for yes and n/N for no)?"<<endl;
+            cin>>menuOption;
+            cout<<endl;
+            if(menuOption == 'y' || menuOption == 'Y'){
+                // finding the truth value of expression
+                string truthString = takeTruthValueOfPropositionalAtoms(prefix);
+                cout<<endl;
+                int j =0;
+                bool truthValueAns = truthValue(root,truthString,&j);
+                if(truthValueAns==1){
+                    cout<<"The Truth Value of the given propositional logic is "<<"True"<<endl<<endl;
+                }
+                else{
+                    cout<<"The Truth Value of the given propositional logic is "<<"False"<<endl<<endl;
+                }
+            }
+        }
+        cout<<"*************************************************************************"<<endl;
+        cout<<"Do you want to enter another infix expression (y/Y for yes and n/N for no)? "<<endl<<endl;
+        cin>>inputChar;
+        cout<<endl;
     }
-    else{
-        cout<<"The Truth Value of the given propositional logic is "<<"False"<<endl<<endl;
-    }
-    cout<<"*************************************************************************"<<endl;
     return 0;
 }
 
