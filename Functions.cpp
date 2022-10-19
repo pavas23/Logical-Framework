@@ -554,7 +554,6 @@ string takeTruthValueOfPropositionalAtoms(string prefix){
             truthString += '0';
         }
     }
-    cout<<truthString<<endl<<endl;
     return truthString;
 }
 
