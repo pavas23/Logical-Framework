@@ -718,7 +718,7 @@ int main(void){
             cout<<endl;
         }
         else{
-            cout<<"Thank You!";
+            cout<<"Thank You!"<<endl<<endl;
             break;
         }
     }
