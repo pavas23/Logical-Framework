@@ -660,62 +660,67 @@ Main Function
 int main(void){
     char inputChar = 'y';
     char menuOption;
-    while(inputChar == 'y' || inputChar == 'Y'){
-        // converting the infix expression to prefix
-        string prefix = infixToPrefix();
-        cout<<"The prefix expression for the given infix expression is: "<<prefix<<endl<<endl;
-        cout<<"Do you want to convert the prefix expression into a Binary Parse Tree (y/Y for yes and n/N for no)"<<endl;
-        cin>>menuOption;
-        cout<<endl;
-        if(menuOption == 'y' || menuOption == 'Y'){
-            // converting the prefix expression to ParseTree
-            int i = 0;
-            BinaryTreeNode* root = prefixToParseTree(prefix,&i);
+    while(true){
+        if(inputChar == 'y' || inputChar == 'Y'){
+            // converting the infix expression to prefix
+            string prefix = infixToPrefix();
+            cout<<"The prefix expression for the given infix expression is: "<<prefix<<endl<<endl;
+            cout<<"Do you want to convert the prefix expression into a Binary Parse Tree (y/Y for yes and n/N for no)"<<endl;
+            cin>>menuOption;
+            cout<<endl;
+            if(menuOption == 'y' || menuOption == 'Y'){
+                // converting the prefix expression to ParseTree
+                int i = 0;
+                BinaryTreeNode* root = prefixToParseTree(prefix,&i);
 
-            // printing the levelOrderTraversalOfParseTree
-            cout<<"The Parse Tree formed is (Level Order Traversal) "<<endl;
-            printLevelOrderParseTree(root);
-            cout<<endl;
-
-            cout<<"Do you want to find height of Parse Tree (y/Y for yes and n/N for no)?"<<endl;
-            cin>>menuOption;
-            cout<<endl;
-            if(menuOption == 'y' || menuOption == 'Y'){
-                // finding height of ParseTree
-                int height = heightOfParseTree(root);
-                cout<<"The height of the Parse Tree is "<<height<<endl<<endl;
-            }
-            cout<<"Do you want to find Inorder Traversal of Parse Tree (y/Y for yes and n/N for no)?"<<endl;
-            cin>>menuOption;
-            cout<<endl;
-            if(menuOption == 'y' || menuOption == 'Y'){
-                // printing the Inorder Traversal of ParseTree
-                cout<<"The Inorder traversal of the Parse Tree is: ";
-                InorderTraversalOfParseTree(root);
-                cout<<endl<<endl;
-            }
-            cout<<"Do you want to find the Truth Value of the Parse Tree (y/Y for yes and n/N for no)?"<<endl;
-            cin>>menuOption;
-            cout<<endl;
-            if(menuOption == 'y' || menuOption == 'Y'){
-                // finding the truth value of expression
-                string truthString = takeTruthValueOfPropositionalAtoms(prefix);
+                // printing the levelOrderTraversalOfParseTree
+                cout<<"The Parse Tree formed is (Level Order Traversal) "<<endl;
+                printLevelOrderParseTree(root);
                 cout<<endl;
-                int j =0;
-                bool truthValueAns = truthValue(root,truthString,&j);
-                if(truthValueAns==1){
-                    cout<<"The Truth Value of the given propositional logic is "<<"True"<<endl<<endl;
+
+                cout<<"Do you want to find height of Parse Tree (y/Y for yes and n/N for no)?"<<endl;
+                cin>>menuOption;
+                cout<<endl;
+                if(menuOption == 'y' || menuOption == 'Y'){
+                    // finding height of ParseTree
+                    int height = heightOfParseTree(root);
+                    cout<<"The height of the Parse Tree is "<<height<<endl<<endl;
                 }
-                else{
-                    cout<<"The Truth Value of the given propositional logic is "<<"False"<<endl<<endl;
+                cout<<"Do you want to find Inorder Traversal of Parse Tree (y/Y for yes and n/N for no)?"<<endl;
+                cin>>menuOption;
+                cout<<endl;
+                if(menuOption == 'y' || menuOption == 'Y'){
+                    // printing the Inorder Traversal of ParseTree
+                    cout<<"The Inorder traversal of the Parse Tree is: ";
+                    InorderTraversalOfParseTree(root);
+                    cout<<endl<<endl;
+                }
+                cout<<"Do you want to find the Truth Value of the Parse Tree (y/Y for yes and n/N for no)?"<<endl;
+                cin>>menuOption;
+                cout<<endl;
+                if(menuOption == 'y' || menuOption == 'Y'){
+                    // finding the truth value of expression
+                    string truthString = takeTruthValueOfPropositionalAtoms(prefix);
+                    cout<<endl;
+                    int j =0;
+                    bool truthValueAns = truthValue(root,truthString,&j);
+                    if(truthValueAns==1){
+                        cout<<"The Truth Value of the given propositional logic is "<<"True"<<endl<<endl;
+                    }
+                    else{
+                        cout<<"The Truth Value of the given propositional logic is "<<"False"<<endl<<endl;
+                    }
                 }
             }
+            cout<<"*************************************************************************"<<endl;
+            cout<<"Do you want to enter another infix expression (y/Y for yes and n/N for no)? "<<endl<<endl;
+            cin>>inputChar;
+            cout<<endl;
         }
-        cout<<"*************************************************************************"<<endl;
-        cout<<"Do you want to enter another infix expression (y/Y for yes and n/N for no)? "<<endl<<endl;
-        cin>>inputChar;
-        cout<<endl;
+        else{
+            cout<<"Thank You!";
+            break;
+        }
     }
     return 0;
 }
-
