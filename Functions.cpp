@@ -1,12 +1,10 @@
 /*
 <------------------------------------------------------------------------------------------------------------>
-<------------------------------------------------------------------------------------------------------------>
 Team Members:
 1 Pavas Garg 2021A7PS2587H
 2 Saksham Bajaj 2021A7PS1315H
 3 M Sai Karthik 2021A7PS0097H
 4 Kolasani Amit Vishnu 2021A7PS0151H
-<------------------------------------------------------------------------------------------------------------>
 <------------------------------------------------------------------------------------------------------------>
 */
 
@@ -260,15 +258,15 @@ string infixToPrefix(){
             else{
 
                 // find precedence of v[i] and top ele of stack
-                for(int i=0;i<4;i++){
-                    if(precedence[i] == v[i]){
-                        pref = i;
+                for(int k=0;k<6;k++){
+                    if(precedence[k] == v[i]){
+                        pref = k;
                         break;
                     }
                 }
-                for(int i=0;i<4;i++){
-                    if(precedence[i] == stack.top()){
-                        prefStack = i;
+                for(int h=0;h<6;h++){
+                    if(precedence[h] == stack.top()){
+                        prefStack = h;
                         break;
                     }
                 }
@@ -319,7 +317,7 @@ string infixToPrefix(){
         j++;
         stack.pop();
     }
-    // as the display array length included brackets also so final length will without brackets will
+    // as the display array length included brackets also so final length without brackets will
     // be less than len so count the final length
     int count = 0;
     for(int i=0;i<len;i++){
@@ -328,7 +326,6 @@ string infixToPrefix(){
         }
         count++;
     }
-
     // now reverse the postfix form to obtain the prefix form
     string prefixStr;
     for(int i=count-1;i>=0;i--){
