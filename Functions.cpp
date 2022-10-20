@@ -203,6 +203,21 @@ expression.
 <------------------------------------------------------------------------------------------------------------>
 */
 
+/// This Function is used to convert Infix to Prefix
+///It  takes input of an Infix expression in the form of a string data type, Then the reversed infix expression is stored in an array(but'(' is converted to ')' and vice verca)
+/// Precedence of operators is defined along Stack named stack. Also, an array named display is created of same length as the infix string and each eleemnt is initalized to -1
+/// Iteration is done through each element of array(reversed string) and  if operator is '(' then its directly pushed into stack once found.
+///If operator is either '>' or '+' or '*' or '~', then directly push the operator into stack if stack is empty. 
+///If stack is not empty : 1) push the element into the stack provided precedence of current operator is higher than precedence of top element in stack.
+///                        2) If precedence of top element of stack is greater than equal to current operator and for a non empty stack,
+///                           operator would be added to the display array and then top element of stack would be deleted,provided top element is neither '(' or ')'.
+///                           If top element turns out to be '(' or ')', then current operator would be pushed to stack.
+///If operator is ')'then empty the stack till we find '(' and pop this.
+/// Add charecters to display array
+/// Finally add all reamining elements of stack in display array
+/// Remove  '(' and ')' and display the reversed display array(since display array has postfix form) to give output of Prefix expression
+
+
 string infixToPrefix(){
     cout<<"*************************************************************************"<<endl<<endl;
     cout<<"Enter The Infix Expression: ";
@@ -359,6 +374,21 @@ class BinaryTreeNode{
             right = NULL;
         }
 };
+
+/// The function prefixToParseTree is used to convert prefix form to Parse tree
+/// It has two inputs, one is prefix string obtained from given infix form and te=he other is a pointer
+/// We create a binary tree node for each charecter is prefixInput string and increment the pointer to traverse through the whole string
+/// If root node contains *,+,> operators so a well formed formula will have both left and right subtrees
+/// if root node '~' means only one side of tree is there which should be right side and root->left is NULL
+/// We declare a function heightOfParseTree and printLevelOrderParseTreeHelper which helps in finding the height of parse tree and 
+/// helping in level order traversal of parse tree.
+///If only its of one level i.e only root exists, then we print it.
+/// If level is greater than 1, then root is not there in that level, only left and right subtrees are there.
+/// We pass level-1 here as current level as for the original tree, the level was equal to level but 
+///for the subtree the level with reference to the left root and right root will be one less in that subtrees
+/// Finally, we call printLevelOrderParseTreeHelper to print each level of parse tree using iterations.
+
+
 BinaryTreeNode* prefixToParseTree(string prefixInput, int* i){
     // if string is empty then root points to NULL which is the base case
     if(prefixInput.size() == 0){
@@ -425,6 +455,12 @@ parse tree.
 <------------------------------------------------------------------------------------------------------------>
 */
 
+/// The function InorderTraversalOfParseTree is defined and it outputs the infix expression back by in-order traversal
+/// It initially prints the left subtree, then root node data and then right subtree
+/// If right subtree is empty, It will just print the left subtree and root node data
+/// If left subtree is empty, It would print, root node data and then right subtree
+/// If no subtrees, then only root node data will be printed
+/// If no root node data and no subtrees then NULL would be returned
 // for Inorder traversal we need to first print leftSubtree then root->data and then rightSubtree
 void InorderTraversalOfParseTree(BinaryTreeNode* root){
     if(root == NULL){
@@ -459,8 +495,13 @@ Write a function to compute the height of a parse tree.
 <------------------------------------------------------------------------------------------------------------>
 */
 
-/* height of a parseTree can be found by finding max of height of leftSubTree and rightSubTree and adding 1  because of root element
-*/
+///The function heightOfParseTree is used to find out maximum height of Parse Tree by finding maximum heights of left subtrees and right subtrees
+/// If it has no right or left subtrees, then maximum height is one as it has only root element
+///If we have only left subtree, then maximum height of parse tree is 1(due to root element)+height of left subtree
+///If we have only right subtree, then maximum height of parse tree is 1(due to root element)+height of right subtree
+///If it has both left and right subtrees, then then maximum height of parse tree is 1(due to root element) + height of either left subtree or right subtree(whichever is greater)
+
+
 int heightOfParseTree(BinaryTreeNode* root){
     if(root == NULL){
         return 0;
