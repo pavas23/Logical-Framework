@@ -4,10 +4,10 @@
 
 ## Team Members
 >
-> - 1 Pavas Garg 2021A7PS2587H
-> - 2 Saksham Bajaj 2021A7PS1315H
-> - 3 M Sai Karthik 2021A7PS0097H
-> - 4 Kolasani Amit Vishnu 2021A7PS0151H <br><br>
+> - Pavas Garg 2021A7PS2587H
+> - Saksham Bajaj 2021A7PS1315H
+> - M Sai Karthik 2021A7PS0097H
+> - Kolasani Amit Vishnu 2021A7PS0151H <br><br>
 
 ## Functions
 >
