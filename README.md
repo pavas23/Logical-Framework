@@ -28,7 +28,7 @@ and evaluate and print its truth table
     
 ## Screenshots
 
-![Output](https://user-images.githubusercontent.com/97559428/196146174-112dd13a-f8db-4336-99c9-4bc671054789.png)
+![Output](https://user-images.githubusercontent.com/97559428/197117180-3ef9d44e-cb63-4208-892f-d413b0f074c5.png)
 <br/>
 <br/>
 ![Output](https://user-images.githubusercontent.com/97559428/196759255-5d799c8b-59f4-4d5c-ad7b-098f6533266d.png)
