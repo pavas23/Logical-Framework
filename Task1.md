@@ -17,8 +17,7 @@
 > -  Now display the reversed display array (since display array has postfix form) to give output of Prefix expression <br><br>
 
 ### Time Complexity
-> 
+> Since we are scanning all the characters in the infix string at once so Time complexity for this function comes out to be <b>O(n)</b>, Where n is the size of input infix string.
 
 ### Space Complexity
-
->
+> As we have made arrays of size n so the auxiliary space used is space used by these arrays and stack memory.So the Space Complexity is <b>O(n)</b> for this function.
