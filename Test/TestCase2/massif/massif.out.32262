@@ -1,0 +1,1861 @@
+desc: (none)
+cmd: ./a.out
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2310708
+mem_heap_B=15162
+mem_heap_extra_B=14
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2318648
+mem_heap_B=87866
+mem_heap_extra_B=22
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2434848
+mem_heap_B=88890
+mem_heap_extra_B=30
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2448040
+mem_heap_B=89914
+mem_heap_extra_B=38
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=2455611
+mem_heap_B=89945
+mem_heap_extra_B=47
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2464104
+mem_heap_B=90035
+mem_heap_extra_B=53
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=2473099
+mem_heap_B=90155
+mem_heap_extra_B=61
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=2495700
+mem_heap_B=90171
+mem_heap_extra_B=69
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=2499726
+mem_heap_B=90219
+mem_heap_extra_B=93
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=2505428
+mem_heap_B=90267
+mem_heap_extra_B=117
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=2512809
+mem_heap_B=90315
+mem_heap_extra_B=141
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=2518492
+mem_heap_B=90363
+mem_heap_extra_B=165
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=2524194
+mem_heap_B=90411
+mem_heap_extra_B=189
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=2529896
+mem_heap_B=90459
+mem_heap_extra_B=213
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=2536800
+mem_heap_B=90523
+mem_heap_extra_B=245
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=2541689
+mem_heap_B=90571
+mem_heap_extra_B=269
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=2547391
+mem_heap_B=90619
+mem_heap_extra_B=293
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=2551003
+mem_heap_B=90635
+mem_heap_extra_B=301
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=2557907
+mem_heap_B=90699
+mem_heap_extra_B=333
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=2562796
+mem_heap_B=90747
+mem_heap_extra_B=357
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=2568498
+mem_heap_B=90795
+mem_heap_extra_B=381
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=2572110
+mem_heap_B=90811
+mem_heap_extra_B=389
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=2579014
+mem_heap_B=90875
+mem_heap_extra_B=421
+mem_stacks_B=0
+heap_tree=detailed
+n4: 90875 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4AE1CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 1024 0x4AE2F85: _IO_default_uflow (genops.c:362)
+     n1: 1024 0x495D4B0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 1024 0x496BB22: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 1024 0x4917EC6: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x1094CF: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+         n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+   n1: 1024 0x4AE1F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4AE06B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4AE06B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4AD43C0: fwrite (iofwrite.c:39)
+       n1: 1024 0x4987823: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x4987BDB: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 1024 0x109473: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+          n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+ n0: 961 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=2583903
+mem_heap_B=90923
+mem_heap_extra_B=445
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=2589605
+mem_heap_B=90971
+mem_heap_extra_B=469
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=2596986
+mem_heap_B=91019
+mem_heap_extra_B=493
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=2602669
+mem_heap_B=91067
+mem_heap_extra_B=517
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=2608371
+mem_heap_B=91115
+mem_heap_extra_B=541
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=2614073
+mem_heap_B=91163
+mem_heap_extra_B=565
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=2620977
+mem_heap_B=91227
+mem_heap_extra_B=597
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=2625866
+mem_heap_B=91275
+mem_heap_extra_B=621
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=2631568
+mem_heap_B=91323
+mem_heap_extra_B=645
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=2635180
+mem_heap_B=91339
+mem_heap_extra_B=653
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=2642084
+mem_heap_B=91403
+mem_heap_extra_B=685
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=2646973
+mem_heap_B=91451
+mem_heap_extra_B=709
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=2652675
+mem_heap_B=91499
+mem_heap_extra_B=733
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=2656287
+mem_heap_B=91515
+mem_heap_extra_B=741
+mem_stacks_B=0
+heap_tree=detailed
+n5: 91515 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4AE1CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 1024 0x4AE2F85: _IO_default_uflow (genops.c:362)
+     n1: 1024 0x495D4B0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 1024 0x496BB22: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 1024 0x4917EC6: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x1094CF: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+         n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+   n1: 1024 0x4AE1F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4AE06B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4AE06B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4AD43C0: fwrite (iofwrite.c:39)
+       n1: 1024 0x4987823: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x4987BDB: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 1024 0x109473: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+          n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+ n1: 1360 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1360 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1360 in 3 places, all below massif's threshold (1.00%)
+ n0: 241 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=2663191
+mem_heap_B=91579
+mem_heap_extra_B=773
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=2668080
+mem_heap_B=91627
+mem_heap_extra_B=797
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=2673782
+mem_heap_B=91675
+mem_heap_extra_B=821
+mem_stacks_B=0
+heap_tree=detailed
+n5: 91675 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4AE1CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 1024 0x4AE2F85: _IO_default_uflow (genops.c:362)
+     n1: 1024 0x495D4B0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 1024 0x496BB22: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 1024 0x4917EC6: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x1094CF: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+         n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+   n1: 1024 0x4AE1F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4AE06B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4AE06B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4AD43C0: fwrite (iofwrite.c:39)
+       n1: 1024 0x4987823: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x4987BDB: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 1024 0x109473: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+          n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+ n1: 1520 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1520 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1520 in 3 places, all below massif's threshold (1.00%)
+ n0: 241 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=2677394
+mem_heap_B=91691
+mem_heap_extra_B=829
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=2683202
+mem_heap_B=91739
+mem_heap_extra_B=853
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=2687082
+mem_heap_B=91770
+mem_heap_extra_B=862
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=2695563
+mem_heap_B=91739
+mem_heap_extra_B=853
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2701961
+mem_heap_B=91939
+mem_heap_extra_B=869
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=2709096
+mem_heap_B=93771
+mem_heap_extra_B=1301
+mem_stacks_B=0
+heap_tree=detailed
+n6: 93771 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4AE1CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 1024 0x4AE2F85: _IO_default_uflow (genops.c:362)
+     n1: 1024 0x495D4B0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 1024 0x496BB22: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 1024 0x4917EC6: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x1094CF: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+         n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+   n1: 1024 0x4AE1F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4AE06B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4AE06B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4AD43C0: fwrite (iofwrite.c:39)
+       n1: 1024 0x4987823: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x4987BDB: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 1024 0x109473: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+          n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+ n1: 1600 0x4999BCC: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n0: 1600 in 3 places, all below massif's threshold (1.00%)
+ n1: 1584 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1584 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1584 in 3 places, all below massif's threshold (1.00%)
+ n0: 673 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=2715111
+mem_heap_B=94731
+mem_heap_extra_B=1589
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2722624
+mem_heap_B=95963
+mem_heap_extra_B=1941
+mem_stacks_B=0
+heap_tree=detailed
+n7: 95963 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 3000 0x4999BCC: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n2: 2400 0x109D6A: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n2: 2200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 2000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 1800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 1600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n2: 1400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n2: 1200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+         n1: 1000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+          n0: 1000 in 2 places, all below massif's threshold (1.00%)
+         n0: 200 in 1 place, below massif's threshold (1.00%)
+        n0: 200 in 1 place, below massif's threshold (1.00%)
+       n0: 200 in 1 place, below massif's threshold (1.00%)
+      n0: 200 in 1 place, below massif's threshold (1.00%)
+     n0: 200 in 1 place, below massif's threshold (1.00%)
+    n0: 200 in 1 place, below massif's threshold (1.00%)
+   n0: 200 in 2 places, all below massif's threshold (1.00%)
+  n0: 600 in 2 places, all below massif's threshold (1.00%)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4AE1CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 1024 0x4AE2F85: _IO_default_uflow (genops.c:362)
+     n1: 1024 0x495D4B0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 1024 0x496BB22: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 1024 0x4917EC6: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x1094CF: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+         n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+   n1: 1024 0x4AE1F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4AE06B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4AE06B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4AD43C0: fwrite (iofwrite.c:39)
+       n1: 1024 0x4987823: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x4987BDB: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 1024 0x109473: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+          n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+ n1: 1584 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1584 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1584 in 3 places, all below massif's threshold (1.00%)
+ n1: 1224 0x109CD4: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+  n0: 1224 in 3 places, all below massif's threshold (1.00%)
+ n0: 241 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=2723186
+mem_heap_B=95787
+mem_heap_extra_B=1941
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2726952
+mem_heap_B=96827
+mem_heap_extra_B=2165
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=2727100
+mem_heap_B=96827
+mem_heap_extra_B=2165
+mem_stacks_B=0
+heap_tree=detailed
+n7: 96827 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 3600 0x4999BCC: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n2: 2800 0x109D6A: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n2: 2600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 2400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 2200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 2000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n2: 1800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n2: 1600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+         n2: 1400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+          n2: 1200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+           n1: 1000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+            n0: 1000 in 2 places, all below massif's threshold (1.00%)
+           n0: 200 in 1 place, below massif's threshold (1.00%)
+          n0: 200 in 1 place, below massif's threshold (1.00%)
+         n0: 200 in 1 place, below massif's threshold (1.00%)
+        n0: 200 in 1 place, below massif's threshold (1.00%)
+       n0: 200 in 1 place, below massif's threshold (1.00%)
+      n0: 200 in 1 place, below massif's threshold (1.00%)
+     n0: 200 in 1 place, below massif's threshold (1.00%)
+    n0: 200 in 1 place, below massif's threshold (1.00%)
+   n0: 200 in 2 places, all below massif's threshold (1.00%)
+  n0: 800 in 2 places, all below massif's threshold (1.00%)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4AE1CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 1024 0x4AE2F85: _IO_default_uflow (genops.c:362)
+     n1: 1024 0x495D4B0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 1024 0x496BB22: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 1024 0x4917EC6: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x1094CF: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+         n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+   n1: 1024 0x4AE1F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4AE06B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4AE06B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4AD43C0: fwrite (iofwrite.c:39)
+       n1: 1024 0x4987823: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x4987BDB: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 1024 0x109473: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+          n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+ n1: 1584 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1584 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1584 in 3 places, all below massif's threshold (1.00%)
+ n1: 1488 0x109CD4: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+  n0: 1488 in 3 places, all below massif's threshold (1.00%)
+ n0: 241 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=2730748
+mem_heap_B=97043
+mem_heap_extra_B=2309
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=2733624
+mem_heap_B=98011
+mem_heap_extra_B=2485
+mem_stacks_B=0
+heap_tree=detailed
+n7: 98011 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 4400 0x4999BCC: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n2: 3600 0x109D6A: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n2: 3400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 3200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 3000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 2800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n2: 2600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n2: 2400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+         n2: 2200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+          n2: 2000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+           n2: 1800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+            n2: 1600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+             n2: 1400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+              n1: 1200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+               n0: 1200 in 2 places, all below massif's threshold (1.00%)
+              n0: 200 in 1 place, below massif's threshold (1.00%)
+             n0: 200 in 1 place, below massif's threshold (1.00%)
+            n0: 200 in 1 place, below massif's threshold (1.00%)
+           n0: 200 in 1 place, below massif's threshold (1.00%)
+          n0: 200 in 1 place, below massif's threshold (1.00%)
+         n0: 200 in 1 place, below massif's threshold (1.00%)
+        n0: 200 in 1 place, below massif's threshold (1.00%)
+       n0: 200 in 1 place, below massif's threshold (1.00%)
+      n0: 200 in 1 place, below massif's threshold (1.00%)
+     n0: 200 in 1 place, below massif's threshold (1.00%)
+    n0: 200 in 1 place, below massif's threshold (1.00%)
+   n0: 200 in 2 places, all below massif's threshold (1.00%)
+  n0: 800 in 2 places, all below massif's threshold (1.00%)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4AE1CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 1024 0x4AE2F85: _IO_default_uflow (genops.c:362)
+     n1: 1024 0x495D4B0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 1024 0x496BB22: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 1024 0x4917EC6: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x1094CF: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+         n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+   n1: 1024 0x4AE1F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4AE06B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4AE06B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4AD43C0: fwrite (iofwrite.c:39)
+       n1: 1024 0x4987823: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x4987BDB: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 1024 0x109473: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+          n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+ n1: 1872 0x109CD4: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+  n0: 1872 in 3 places, all below massif's threshold (1.00%)
+ n1: 1584 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1584 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1584 in 3 places, all below massif's threshold (1.00%)
+ n0: 241 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=2737337
+mem_heap_B=98027
+mem_heap_extra_B=2613
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=2740579
+mem_heap_B=99219
+mem_heap_extra_B=2821
+mem_stacks_B=0
+heap_tree=detailed
+n7: 99219 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 5200 0x4999BCC: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n2: 4600 0x109D6A: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n2: 4400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 4200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 4000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 3800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n2: 3600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n2: 3400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+         n2: 3200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+          n2: 3000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+           n2: 2800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+            n2: 2600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+             n2: 2400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+              n2: 2200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+               n2: 2000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                n2: 1800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                 n2: 1600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                  n2: 1400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                   n1: 1200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                    n0: 1200 in 2 places, all below massif's threshold (1.00%)
+                   n0: 200 in 1 place, below massif's threshold (1.00%)
+                  n0: 200 in 1 place, below massif's threshold (1.00%)
+                 n0: 200 in 1 place, below massif's threshold (1.00%)
+                n0: 200 in 1 place, below massif's threshold (1.00%)
+               n0: 200 in 1 place, below massif's threshold (1.00%)
+              n0: 200 in 1 place, below massif's threshold (1.00%)
+             n0: 200 in 1 place, below massif's threshold (1.00%)
+            n0: 200 in 1 place, below massif's threshold (1.00%)
+           n0: 200 in 1 place, below massif's threshold (1.00%)
+          n0: 200 in 1 place, below massif's threshold (1.00%)
+         n0: 200 in 1 place, below massif's threshold (1.00%)
+        n0: 200 in 1 place, below massif's threshold (1.00%)
+       n0: 200 in 1 place, below massif's threshold (1.00%)
+      n0: 200 in 1 place, below massif's threshold (1.00%)
+     n0: 200 in 1 place, below massif's threshold (1.00%)
+    n0: 200 in 1 place, below massif's threshold (1.00%)
+   n0: 200 in 2 places, all below massif's threshold (1.00%)
+  n0: 600 in 2 places, all below massif's threshold (1.00%)
+ n3: 2280 0x109CD4: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1152 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1152 in 3 places, all below massif's threshold (1.00%)
+  n1: 1104 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1104 in 3 places, all below massif's threshold (1.00%)
+  n0: 24 in 1 place, below massif's threshold (1.00%)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4AE1CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 1024 0x4AE2F85: _IO_default_uflow (genops.c:362)
+     n1: 1024 0x495D4B0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 1024 0x496BB22: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 1024 0x4917EC6: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x1094CF: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+         n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+   n1: 1024 0x4AE1F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4AE06B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4AE06B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4AD43C0: fwrite (iofwrite.c:39)
+       n1: 1024 0x4987823: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x4987BDB: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 1024 0x109473: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+          n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+ n1: 1584 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1584 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1584 in 3 places, all below massif's threshold (1.00%)
+ n0: 241 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=2744353
+mem_heap_B=99835
+mem_heap_extra_B=2997
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=2745055
+mem_heap_B=100083
+mem_heap_extra_B=3045
+mem_stacks_B=0
+heap_tree=detailed
+n7: 100083 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 5800 0x4999BCC: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n2: 5000 0x109D6A: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n2: 4800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 4600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 4400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 4200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n2: 4000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n2: 3800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+         n2: 3600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+          n2: 3400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+           n2: 3200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+            n2: 3000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+             n2: 2800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+              n2: 2600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+               n2: 2400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                n2: 2200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                 n2: 2000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                  n2: 1800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                   n2: 1600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                    n2: 1400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                     n1: 1200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                      n0: 1200 in 2 places, all below massif's threshold (1.00%)
+                     n0: 200 in 1 place, below massif's threshold (1.00%)
+                    n0: 200 in 1 place, below massif's threshold (1.00%)
+                   n0: 200 in 1 place, below massif's threshold (1.00%)
+                  n0: 200 in 1 place, below massif's threshold (1.00%)
+                 n0: 200 in 1 place, below massif's threshold (1.00%)
+                n0: 200 in 1 place, below massif's threshold (1.00%)
+               n0: 200 in 1 place, below massif's threshold (1.00%)
+              n0: 200 in 1 place, below massif's threshold (1.00%)
+             n0: 200 in 1 place, below massif's threshold (1.00%)
+            n0: 200 in 1 place, below massif's threshold (1.00%)
+           n0: 200 in 1 place, below massif's threshold (1.00%)
+          n0: 200 in 1 place, below massif's threshold (1.00%)
+         n0: 200 in 1 place, below massif's threshold (1.00%)
+        n0: 200 in 1 place, below massif's threshold (1.00%)
+       n0: 200 in 1 place, below massif's threshold (1.00%)
+      n0: 200 in 1 place, below massif's threshold (1.00%)
+     n0: 200 in 1 place, below massif's threshold (1.00%)
+    n0: 200 in 1 place, below massif's threshold (1.00%)
+   n0: 200 in 2 places, all below massif's threshold (1.00%)
+  n0: 800 in 2 places, all below massif's threshold (1.00%)
+ n3: 2544 0x109CD4: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1296 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1296 in 3 places, all below massif's threshold (1.00%)
+  n1: 1224 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1224 in 3 places, all below massif's threshold (1.00%)
+  n0: 24 in 1 place, below massif's threshold (1.00%)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n0: 2048 in 2 places, all below massif's threshold (1.00%)
+ n1: 1584 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1584 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1584 in 3 places, all below massif's threshold (1.00%)
+ n0: 241 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=2748703
+mem_heap_B=100299
+mem_heap_extra_B=3189
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=2751579
+mem_heap_B=101267
+mem_heap_extra_B=3365
+mem_stacks_B=0
+heap_tree=detailed
+n7: 101267 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 6600 0x4999BCC: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n2: 5800 0x109D6A: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n2: 5600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 5400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 5200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 5000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n2: 4800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n2: 4600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+         n2: 4400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+          n2: 4200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+           n2: 4000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+            n2: 3800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+             n2: 3600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+              n2: 3400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+               n2: 3200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                n2: 3000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                 n2: 2800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                  n2: 2600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                   n2: 2400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                    n2: 2200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                     n2: 2000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                      n2: 1800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                       n2: 1600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                        n2: 1400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                         n1: 1200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                          n0: 1200 in 2 places, all below massif's threshold (1.00%)
+                         n0: 200 in 1 place, below massif's threshold (1.00%)
+                        n0: 200 in 1 place, below massif's threshold (1.00%)
+                       n0: 200 in 1 place, below massif's threshold (1.00%)
+                      n0: 200 in 1 place, below massif's threshold (1.00%)
+                     n0: 200 in 1 place, below massif's threshold (1.00%)
+                    n0: 200 in 1 place, below massif's threshold (1.00%)
+                   n0: 200 in 1 place, below massif's threshold (1.00%)
+                  n0: 200 in 1 place, below massif's threshold (1.00%)
+                 n0: 200 in 1 place, below massif's threshold (1.00%)
+                n0: 200 in 1 place, below massif's threshold (1.00%)
+               n0: 200 in 1 place, below massif's threshold (1.00%)
+              n0: 200 in 1 place, below massif's threshold (1.00%)
+             n0: 200 in 1 place, below massif's threshold (1.00%)
+            n0: 200 in 1 place, below massif's threshold (1.00%)
+           n0: 200 in 1 place, below massif's threshold (1.00%)
+          n0: 200 in 1 place, below massif's threshold (1.00%)
+         n0: 200 in 1 place, below massif's threshold (1.00%)
+        n0: 200 in 1 place, below massif's threshold (1.00%)
+       n0: 200 in 1 place, below massif's threshold (1.00%)
+      n0: 200 in 1 place, below massif's threshold (1.00%)
+     n0: 200 in 1 place, below massif's threshold (1.00%)
+    n0: 200 in 1 place, below massif's threshold (1.00%)
+   n0: 200 in 2 places, all below massif's threshold (1.00%)
+  n0: 800 in 2 places, all below massif's threshold (1.00%)
+ n3: 2928 0x109CD4: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1488 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1488 in 3 places, all below massif's threshold (1.00%)
+  n1: 1416 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1416 in 3 places, all below massif's threshold (1.00%)
+  n0: 24 in 1 place, below massif's threshold (1.00%)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n0: 2048 in 2 places, all below massif's threshold (1.00%)
+ n1: 1584 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1584 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1584 in 3 places, all below massif's threshold (1.00%)
+ n0: 241 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=60
+#-----------
+time=2755292
+mem_heap_B=101283
+mem_heap_extra_B=3493
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=2758583
+mem_heap_B=102275
+mem_heap_extra_B=3685
+mem_stacks_B=0
+heap_tree=detailed
+n7: 102275 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 7200 0x4999BCC: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n2: 6600 0x109D6A: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n2: 6400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 6200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 6000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 5800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n2: 5600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n2: 5400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+         n2: 5200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+          n2: 5000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+           n2: 4800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+            n2: 4600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+             n2: 4400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+              n2: 4200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+               n2: 4000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                n2: 3800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                 n2: 3600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                  n2: 3400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                   n2: 3200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                    n2: 3000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                     n2: 2800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                      n2: 2600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                       n2: 2400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                        n2: 2200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                         n2: 2000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                          n2: 1800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                           n2: 1600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                            n2: 1400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                             n1: 1200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                              n0: 1200 in 2 places, all below massif's threshold (1.00%)
+                             n0: 200 in 1 place, below massif's threshold (1.00%)
+                            n0: 200 in 1 place, below massif's threshold (1.00%)
+                           n0: 200 in 1 place, below massif's threshold (1.00%)
+                          n0: 200 in 1 place, below massif's threshold (1.00%)
+                         n0: 200 in 1 place, below massif's threshold (1.00%)
+                        n0: 200 in 1 place, below massif's threshold (1.00%)
+                       n0: 200 in 1 place, below massif's threshold (1.00%)
+                      n0: 200 in 1 place, below massif's threshold (1.00%)
+                     n0: 200 in 1 place, below massif's threshold (1.00%)
+                    n0: 200 in 1 place, below massif's threshold (1.00%)
+                   n0: 200 in 1 place, below massif's threshold (1.00%)
+                  n0: 200 in 1 place, below massif's threshold (1.00%)
+                 n0: 200 in 1 place, below massif's threshold (1.00%)
+                n0: 200 in 1 place, below massif's threshold (1.00%)
+               n0: 200 in 1 place, below massif's threshold (1.00%)
+              n0: 200 in 1 place, below massif's threshold (1.00%)
+             n0: 200 in 1 place, below massif's threshold (1.00%)
+            n0: 200 in 1 place, below massif's threshold (1.00%)
+           n0: 200 in 1 place, below massif's threshold (1.00%)
+          n0: 200 in 1 place, below massif's threshold (1.00%)
+         n0: 200 in 1 place, below massif's threshold (1.00%)
+        n0: 200 in 1 place, below massif's threshold (1.00%)
+       n0: 200 in 1 place, below massif's threshold (1.00%)
+      n0: 200 in 1 place, below massif's threshold (1.00%)
+     n0: 200 in 1 place, below massif's threshold (1.00%)
+    n0: 200 in 1 place, below massif's threshold (1.00%)
+   n0: 200 in 2 places, all below massif's threshold (1.00%)
+  n0: 600 in 2 places, all below massif's threshold (1.00%)
+ n3: 3336 0x109CD4: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1680 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1680 in 3 places, all below massif's threshold (1.00%)
+  n1: 1632 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1632 in 3 places, all below massif's threshold (1.00%)
+  n0: 24 in 1 place, below massif's threshold (1.00%)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n0: 2048 in 2 places, all below massif's threshold (1.00%)
+ n1: 1584 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1584 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1584 in 3 places, all below massif's threshold (1.00%)
+ n0: 241 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=62
+#-----------
+time=2762357
+mem_heap_B=102891
+mem_heap_extra_B=3861
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=2763059
+mem_heap_B=103139
+mem_heap_extra_B=3909
+mem_stacks_B=0
+heap_tree=detailed
+n7: 103139 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 7800 0x4999BCC: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n2: 7000 0x109D6A: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n2: 6800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 6600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 6400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 6200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n2: 6000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n2: 5800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+         n2: 5600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+          n2: 5400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+           n2: 5200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+            n2: 5000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+             n2: 4800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+              n2: 4600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+               n2: 4400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                n2: 4200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                 n2: 4000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                  n2: 3800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                   n2: 3600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                    n2: 3400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                     n2: 3200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                      n2: 3000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                       n2: 2800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                        n2: 2600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                         n2: 2400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                          n2: 2200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                           n2: 2000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                            n2: 1800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                             n2: 1600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                              n0: 1400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                              n0: 200 in 1 place, below massif's threshold (1.00%)
+                             n0: 200 in 1 place, below massif's threshold (1.00%)
+                            n0: 200 in 1 place, below massif's threshold (1.00%)
+                           n0: 200 in 1 place, below massif's threshold (1.00%)
+                          n0: 200 in 1 place, below massif's threshold (1.00%)
+                         n0: 200 in 1 place, below massif's threshold (1.00%)
+                        n0: 200 in 1 place, below massif's threshold (1.00%)
+                       n0: 200 in 1 place, below massif's threshold (1.00%)
+                      n0: 200 in 1 place, below massif's threshold (1.00%)
+                     n0: 200 in 1 place, below massif's threshold (1.00%)
+                    n0: 200 in 1 place, below massif's threshold (1.00%)
+                   n0: 200 in 1 place, below massif's threshold (1.00%)
+                  n0: 200 in 1 place, below massif's threshold (1.00%)
+                 n0: 200 in 1 place, below massif's threshold (1.00%)
+                n0: 200 in 1 place, below massif's threshold (1.00%)
+               n0: 200 in 1 place, below massif's threshold (1.00%)
+              n0: 200 in 1 place, below massif's threshold (1.00%)
+             n0: 200 in 1 place, below massif's threshold (1.00%)
+            n0: 200 in 1 place, below massif's threshold (1.00%)
+           n0: 200 in 1 place, below massif's threshold (1.00%)
+          n0: 200 in 1 place, below massif's threshold (1.00%)
+         n0: 200 in 1 place, below massif's threshold (1.00%)
+        n0: 200 in 1 place, below massif's threshold (1.00%)
+       n0: 200 in 1 place, below massif's threshold (1.00%)
+      n0: 200 in 1 place, below massif's threshold (1.00%)
+     n0: 200 in 1 place, below massif's threshold (1.00%)
+    n0: 200 in 1 place, below massif's threshold (1.00%)
+   n0: 200 in 2 places, all below massif's threshold (1.00%)
+  n0: 800 in 2 places, all below massif's threshold (1.00%)
+ n3: 3600 0x109CD4: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1824 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1824 in 3 places, all below massif's threshold (1.00%)
+  n1: 1752 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1752 in 3 places, all below massif's threshold (1.00%)
+  n0: 24 in 1 place, below massif's threshold (1.00%)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n0: 2048 in 2 places, all below massif's threshold (1.00%)
+ n1: 1584 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1584 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1584 in 3 places, all below massif's threshold (1.00%)
+ n0: 241 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=2766707
+mem_heap_B=103355
+mem_heap_extra_B=4053
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=2769583
+mem_heap_B=104323
+mem_heap_extra_B=4229
+mem_stacks_B=0
+heap_tree=detailed
+n7: 104323 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 8600 0x4999BCC: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n2: 7800 0x109D6A: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n2: 7600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 7400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 7200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 7000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n2: 6800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n2: 6600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+         n2: 6400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+          n2: 6200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+           n2: 6000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+            n2: 5800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+             n2: 5600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+              n2: 5400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+               n2: 5200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                n2: 5000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                 n2: 4800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                  n2: 4600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                   n2: 4400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                    n2: 4200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                     n2: 4000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                      n2: 3800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                       n2: 3600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                        n2: 3400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                         n2: 3200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                          n2: 3000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                           n2: 2800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                            n2: 2600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                             n2: 2400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                              n0: 2200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                              n0: 200 in 1 place, below massif's threshold (1.00%)
+                             n0: 200 in 1 place, below massif's threshold (1.00%)
+                            n0: 200 in 1 place, below massif's threshold (1.00%)
+                           n0: 200 in 1 place, below massif's threshold (1.00%)
+                          n0: 200 in 1 place, below massif's threshold (1.00%)
+                         n0: 200 in 1 place, below massif's threshold (1.00%)
+                        n0: 200 in 1 place, below massif's threshold (1.00%)
+                       n0: 200 in 1 place, below massif's threshold (1.00%)
+                      n0: 200 in 1 place, below massif's threshold (1.00%)
+                     n0: 200 in 1 place, below massif's threshold (1.00%)
+                    n0: 200 in 1 place, below massif's threshold (1.00%)
+                   n0: 200 in 1 place, below massif's threshold (1.00%)
+                  n0: 200 in 1 place, below massif's threshold (1.00%)
+                 n0: 200 in 1 place, below massif's threshold (1.00%)
+                n0: 200 in 1 place, below massif's threshold (1.00%)
+               n0: 200 in 1 place, below massif's threshold (1.00%)
+              n0: 200 in 1 place, below massif's threshold (1.00%)
+             n0: 200 in 1 place, below massif's threshold (1.00%)
+            n0: 200 in 1 place, below massif's threshold (1.00%)
+           n0: 200 in 1 place, below massif's threshold (1.00%)
+          n0: 200 in 1 place, below massif's threshold (1.00%)
+         n0: 200 in 1 place, below massif's threshold (1.00%)
+        n0: 200 in 1 place, below massif's threshold (1.00%)
+       n0: 200 in 1 place, below massif's threshold (1.00%)
+      n0: 200 in 1 place, below massif's threshold (1.00%)
+     n0: 200 in 1 place, below massif's threshold (1.00%)
+    n0: 200 in 1 place, below massif's threshold (1.00%)
+   n0: 200 in 2 places, all below massif's threshold (1.00%)
+  n0: 800 in 2 places, all below massif's threshold (1.00%)
+ n3: 3984 0x109CD4: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+  n1: 2016 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n0: 2016 in 3 places, all below massif's threshold (1.00%)
+  n1: 1944 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1944 in 3 places, all below massif's threshold (1.00%)
+  n0: 24 in 1 place, below massif's threshold (1.00%)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n0: 2048 in 2 places, all below massif's threshold (1.00%)
+ n1: 1584 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1584 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1584 in 3 places, all below massif's threshold (1.00%)
+ n0: 241 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=2773296
+mem_heap_B=104339
+mem_heap_extra_B=4357
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=2776538
+mem_heap_B=105531
+mem_heap_extra_B=4565
+mem_stacks_B=0
+heap_tree=detailed
+n7: 105531 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 9400 0x4999BCC: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n2: 8800 0x109D6A: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n2: 8600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 8400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 8200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 8000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n2: 7800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n2: 7600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+         n2: 7400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+          n2: 7200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+           n2: 7000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+            n2: 6800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+             n2: 6600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+              n2: 6400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+               n2: 6200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                n2: 6000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                 n2: 5800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                  n2: 5600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                   n2: 5400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                    n2: 5200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                     n2: 5000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                      n2: 4800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                       n2: 4600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                        n2: 4400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                         n2: 4200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                          n2: 4000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                           n2: 3800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                            n2: 3600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                             n2: 3400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                              n0: 3200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                              n0: 200 in 1 place, below massif's threshold (1.00%)
+                             n0: 200 in 1 place, below massif's threshold (1.00%)
+                            n0: 200 in 1 place, below massif's threshold (1.00%)
+                           n0: 200 in 1 place, below massif's threshold (1.00%)
+                          n0: 200 in 1 place, below massif's threshold (1.00%)
+                         n0: 200 in 1 place, below massif's threshold (1.00%)
+                        n0: 200 in 1 place, below massif's threshold (1.00%)
+                       n0: 200 in 1 place, below massif's threshold (1.00%)
+                      n0: 200 in 1 place, below massif's threshold (1.00%)
+                     n0: 200 in 1 place, below massif's threshold (1.00%)
+                    n0: 200 in 1 place, below massif's threshold (1.00%)
+                   n0: 200 in 1 place, below massif's threshold (1.00%)
+                  n0: 200 in 1 place, below massif's threshold (1.00%)
+                 n0: 200 in 1 place, below massif's threshold (1.00%)
+                n0: 200 in 1 place, below massif's threshold (1.00%)
+               n0: 200 in 1 place, below massif's threshold (1.00%)
+              n0: 200 in 1 place, below massif's threshold (1.00%)
+             n0: 200 in 1 place, below massif's threshold (1.00%)
+            n0: 200 in 1 place, below massif's threshold (1.00%)
+           n0: 200 in 1 place, below massif's threshold (1.00%)
+          n0: 200 in 1 place, below massif's threshold (1.00%)
+         n0: 200 in 1 place, below massif's threshold (1.00%)
+        n0: 200 in 1 place, below massif's threshold (1.00%)
+       n0: 200 in 1 place, below massif's threshold (1.00%)
+      n0: 200 in 1 place, below massif's threshold (1.00%)
+     n0: 200 in 1 place, below massif's threshold (1.00%)
+    n0: 200 in 1 place, below massif's threshold (1.00%)
+   n0: 200 in 2 places, all below massif's threshold (1.00%)
+  n0: 600 in 2 places, all below massif's threshold (1.00%)
+ n3: 4392 0x109CD4: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+  n2: 2208 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n1: 1128 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n0: 1128 in 2 places, all below massif's threshold (1.00%)
+   n0: 1080 in 2 places, all below massif's threshold (1.00%)
+  n2: 2160 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n1: 1104 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n0: 1104 in 2 places, all below massif's threshold (1.00%)
+   n0: 1056 in 2 places, all below massif's threshold (1.00%)
+  n0: 24 in 1 place, below massif's threshold (1.00%)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n0: 2048 in 2 places, all below massif's threshold (1.00%)
+ n1: 1584 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1584 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1584 in 3 places, all below massif's threshold (1.00%)
+ n0: 241 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=68
+#-----------
+time=2780312
+mem_heap_B=106147
+mem_heap_extra_B=4741
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=2781437
+mem_heap_B=106419
+mem_heap_extra_B=4805
+mem_stacks_B=0
+heap_tree=peak
+n7: 106419 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n2: 10000 0x4999BCC: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n2: 9400 0x109D6A: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n2: 9000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 8800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 8600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 8400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n2: 8200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n2: 8000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+         n2: 7800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+          n2: 7600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+           n2: 7400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+            n2: 7200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+             n2: 7000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+              n2: 6800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+               n2: 6600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                n2: 6400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                 n2: 6200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                  n2: 6000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                   n2: 5800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                    n2: 5600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                     n2: 5400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                      n2: 5200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                       n2: 5000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                        n2: 4800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                         n2: 4600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                          n2: 4400 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                           n2: 4200 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                            n2: 4000 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                             n2: 3800 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                              n0: 3600 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+                              n0: 200 in 1 place, below massif's threshold (1.00%)
+                             n0: 200 in 1 place, below massif's threshold (1.00%)
+                            n0: 200 in 1 place, below massif's threshold (1.00%)
+                           n0: 200 in 1 place, below massif's threshold (1.00%)
+                          n0: 200 in 1 place, below massif's threshold (1.00%)
+                         n0: 200 in 1 place, below massif's threshold (1.00%)
+                        n0: 200 in 1 place, below massif's threshold (1.00%)
+                       n0: 200 in 1 place, below massif's threshold (1.00%)
+                      n0: 200 in 1 place, below massif's threshold (1.00%)
+                     n0: 200 in 1 place, below massif's threshold (1.00%)
+                    n0: 200 in 1 place, below massif's threshold (1.00%)
+                   n0: 200 in 1 place, below massif's threshold (1.00%)
+                  n0: 200 in 1 place, below massif's threshold (1.00%)
+                 n0: 200 in 1 place, below massif's threshold (1.00%)
+                n0: 200 in 1 place, below massif's threshold (1.00%)
+               n0: 200 in 1 place, below massif's threshold (1.00%)
+              n0: 200 in 1 place, below massif's threshold (1.00%)
+             n0: 200 in 1 place, below massif's threshold (1.00%)
+            n0: 200 in 1 place, below massif's threshold (1.00%)
+           n0: 200 in 1 place, below massif's threshold (1.00%)
+          n0: 200 in 1 place, below massif's threshold (1.00%)
+         n0: 200 in 1 place, below massif's threshold (1.00%)
+        n0: 200 in 1 place, below massif's threshold (1.00%)
+       n0: 200 in 1 place, below massif's threshold (1.00%)
+      n0: 200 in 1 place, below massif's threshold (1.00%)
+     n0: 200 in 1 place, below massif's threshold (1.00%)
+    n0: 200 in 1 place, below massif's threshold (1.00%)
+   n0: 400 in 2 places, all below massif's threshold (1.00%)
+  n0: 600 in 2 places, all below massif's threshold (1.00%)
+ n3: 4680 0x109CD4: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+  n2: 2352 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n1: 1224 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n0: 1224 in 2 places, all below massif's threshold (1.00%)
+   n0: 1128 in 2 places, all below massif's threshold (1.00%)
+  n2: 2304 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n1: 1200 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n0: 1200 in 2 places, all below massif's threshold (1.00%)
+   n0: 1104 in 2 places, all below massif's threshold (1.00%)
+  n0: 24 in 1 place, below massif's threshold (1.00%)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n0: 2048 in 2 places, all below massif's threshold (1.00%)
+ n1: 1584 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1584 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1584 in 3 places, all below massif's threshold (1.00%)
+ n0: 241 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=70
+#-----------
+time=2785066
+mem_heap_B=99515
+mem_heap_extra_B=4309
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=3617416
+mem_heap_B=96715
+mem_heap_extra_B=4085
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=3663725
+mem_heap_B=96746
+mem_heap_extra_B=4094
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=3667635
+mem_heap_B=96546
+mem_heap_extra_B=4078
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=3671415
+mem_heap_B=96631
+mem_heap_extra_B=4193
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=3675113
+mem_heap_B=96699
+mem_heap_extra_B=4285
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=3678759
+mem_heap_B=96750
+mem_heap_extra_B=4354
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=3682395
+mem_heap_B=96801
+mem_heap_extra_B=4423
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=3686093
+mem_heap_B=96869
+mem_heap_extra_B=4515
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=3689739
+mem_heap_B=96920
+mem_heap_extra_B=4584
+mem_stacks_B=0
+heap_tree=detailed
+n6: 96920 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n1: 15162 0x4B72971: monstartup (gmon.c:153)
+  n1: 15162 0x109340: __gmon_start__ (in /home/saksham/Documents/Logic/a.out)
+   n1: 15162 0x4839015: ??? (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_massif-amd64-linux.so)
+    n1: 15162 0x1FFEFFFE5F: ???
+     n1: 15162 0x4011B5B: call_init.part.0 (dl-init.c:58)
+      n1: 15162 0x4011D15: call_init (dl-init.c:30)
+       n1: 15162 0x4011D15: _dl_init (dl-init.c:86)
+        n0: 15162 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n3: 4776 0x109CD4: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+  n3: 2376 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n1: 1224 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n0: 1224 in 2 places, all below massif's threshold (1.00%)
+   n2: 1128 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 1104 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 1080 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 1056 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n1: 1032 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n0: 1032 in 2 places, all below massif's threshold (1.00%)
+       n0: 24 in 1 place, below massif's threshold (1.00%)
+      n0: 24 in 1 place, below massif's threshold (1.00%)
+     n0: 24 in 1 place, below massif's threshold (1.00%)
+    n0: 24 in 1 place, below massif's threshold (1.00%)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n3: 2376 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n1: 1224 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n0: 1224 in 2 places, all below massif's threshold (1.00%)
+   n2: 1128 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 1104 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 1080 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 1056 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n1: 1032 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n0: 1032 in 2 places, all below massif's threshold (1.00%)
+       n0: 24 in 1 place, below massif's threshold (1.00%)
+      n0: 24 in 1 place, below massif's threshold (1.00%)
+     n0: 24 in 1 place, below massif's threshold (1.00%)
+    n0: 24 in 1 place, below massif's threshold (1.00%)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 24 in 1 place, below massif's threshold (1.00%)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4AE1CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 1024 0x4AE2F85: _IO_default_uflow (genops.c:362)
+     n1: 1024 0x495D4B0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 1024 0x496BB22: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 1024 0x4917EC6: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x1094CF: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+         n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+   n1: 1024 0x4AE1F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4AE06B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4AE06B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4AD43C0: fwrite (iofwrite.c:39)
+       n1: 1024 0x4987823: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x4987BDB: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 1024 0x109473: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+          n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+ n1: 1584 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1584 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1584 in 3 places, all below massif's threshold (1.00%)
+ n0: 646 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=80
+#-----------
+time=3693371
+mem_heap_B=96971
+mem_heap_extra_B=4653
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=81
+#-----------
+time=3697011
+mem_heap_B=97056
+mem_heap_extra_B=4768
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=82
+#-----------
+time=3700657
+mem_heap_B=97107
+mem_heap_extra_B=4837
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=83
+#-----------
+time=3704293
+mem_heap_B=97158
+mem_heap_extra_B=4906
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=84
+#-----------
+time=3707991
+mem_heap_B=97226
+mem_heap_extra_B=4998
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=3711637
+mem_heap_B=97277
+mem_heap_extra_B=5067
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=86
+#-----------
+time=3715269
+mem_heap_B=97328
+mem_heap_extra_B=5136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=3718909
+mem_heap_B=96988
+mem_heap_extra_B=4676
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=88
+#-----------
+time=3725754
+mem_heap_B=96274
+mem_heap_extra_B=4046
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=89
+#-----------
+time=3736175
+mem_heap_B=81112
+mem_heap_extra_B=4032
+mem_stacks_B=0
+heap_tree=detailed
+n5: 81112 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x48FAA99: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+  n1: 72704 0x4011B99: call_init.part.0 (dl-init.c:72)
+   n1: 72704 0x4011CA0: call_init (dl-init.c:30)
+    n1: 72704 0x4011CA0: _dl_init (dl-init.c:119)
+     n0: 72704 0x4001139: ??? (in /usr/lib/x86_64-linux-gnu/ld-2.31.so)
+ n3: 4776 0x109CD4: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+  n3: 2376 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n1: 1224 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n0: 1224 in 2 places, all below massif's threshold (1.00%)
+   n2: 1128 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 1104 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 1080 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 1056 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n2: 1032 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n2: 1008 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+         n2: 984 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+          n2: 960 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+           n2: 936 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+            n2: 912 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+             n2: 888 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+              n1: 864 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+               n0: 864 in 2 places, all below massif's threshold (1.00%)
+              n0: 24 in 1 place, below massif's threshold (1.00%)
+             n0: 24 in 1 place, below massif's threshold (1.00%)
+            n0: 24 in 1 place, below massif's threshold (1.00%)
+           n0: 24 in 1 place, below massif's threshold (1.00%)
+          n0: 24 in 1 place, below massif's threshold (1.00%)
+         n0: 24 in 1 place, below massif's threshold (1.00%)
+        n0: 24 in 1 place, below massif's threshold (1.00%)
+       n0: 24 in 1 place, below massif's threshold (1.00%)
+      n0: 24 in 1 place, below massif's threshold (1.00%)
+     n0: 24 in 1 place, below massif's threshold (1.00%)
+    n0: 24 in 1 place, below massif's threshold (1.00%)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n3: 2376 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+   n1: 1224 0x109D47: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n0: 1224 in 2 places, all below massif's threshold (1.00%)
+   n2: 1128 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+    n2: 1104 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+     n2: 1080 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+      n2: 1056 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+       n2: 1032 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+        n2: 1008 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+         n2: 984 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+          n2: 960 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+           n2: 936 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+            n2: 912 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+             n2: 888 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+              n1: 864 0x109D7D: prefixToParseTree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int*) (in /home/saksham/Documents/Logic/a.out)
+               n0: 864 in 2 places, all below massif's threshold (1.00%)
+              n0: 24 in 1 place, below massif's threshold (1.00%)
+             n0: 24 in 1 place, below massif's threshold (1.00%)
+            n0: 24 in 1 place, below massif's threshold (1.00%)
+           n0: 24 in 1 place, below massif's threshold (1.00%)
+          n0: 24 in 1 place, below massif's threshold (1.00%)
+         n0: 24 in 1 place, below massif's threshold (1.00%)
+        n0: 24 in 1 place, below massif's threshold (1.00%)
+       n0: 24 in 1 place, below massif's threshold (1.00%)
+      n0: 24 in 1 place, below massif's threshold (1.00%)
+     n0: 24 in 1 place, below massif's threshold (1.00%)
+    n0: 24 in 1 place, below massif's threshold (1.00%)
+   n0: 24 in 1 place, below massif's threshold (1.00%)
+  n0: 24 in 1 place, below massif's threshold (1.00%)
+ n1: 2048 0x4AD2D03: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 2048 0x4AE2ECF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4AE1CA3: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 1024 0x4AE2F85: _IO_default_uflow (genops.c:362)
+     n1: 1024 0x495D4B0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+      n1: 1024 0x496BB22: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+       n1: 1024 0x4917EC6: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x1094CF: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+         n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+   n1: 1024 0x4AE1F2F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4AE06B4: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4AE06B4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4AD43C0: fwrite (iofwrite.c:39)
+       n1: 1024 0x4987823: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+        n1: 1024 0x4987BDB: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+         n1: 1024 0x109473: infixToPrefix[abi:cxx11]() (in /home/saksham/Documents/Logic/a.out)
+          n0: 1024 0x10AB14: main (in /home/saksham/Documents/Logic/a.out)
+ n1: 1584 0x10B207: LinkedList::insertNode(char) (in /home/saksham/Documents/Logic/a.out)
+  n1: 1584 0x10B3D0: Stack::push(char) (in /home/saksham/Documents/Logic/a.out)
+   n0: 1584 in 3 places, all below massif's threshold (1.00%)
+ n0: 0 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=90
+#-----------
+time=3741023
+mem_heap_B=8408
+mem_heap_extra_B=4024
+mem_stacks_B=0
+heap_tree=empty
