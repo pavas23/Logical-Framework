@@ -1,6 +1,6 @@
 ## PrefixToRootedBinaryParseTree
 
-### Algorithm
+## Algorithm
 
 >
 > -  This function prefixToParseTree is used to convert prefix form to Parse tree and returns the root of the Parse Tree.
@@ -14,9 +14,9 @@
 > -  If it contains only one level i.e only root we directly print it.
 > -  If level is greater than 1, then root is not there in that level, only left and right subtrees are there, we pass level-1 here as current level variable as for the original tree, the level variable was equal to level. But for the subtree the level with reference to the left root and right root will be one less in that subtrees<br> <br>
 
-### Time Complexity
+## Time Complexity
 > In this case we are scanning through all the characters in the prefix string of length n so Time Complexity is 
 > <b>O(n)</b>.
 
-### Space Complexity
+## Space Complexity
 > Space complexity is <b>O(1)</b> because we are not using any auxiliary space in this function except for the stack memory for recursive calls.

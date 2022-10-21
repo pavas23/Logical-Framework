@@ -1,6 +1,6 @@
 ## HeightOfParseTree
 
-### Algorithm
+## Algorithm
 >
 > - The Function heightOfParseTree() is used to find out maximum height of Parse Tree by finding maximum heights of left subtrees and right subtrees and adding 1 to it because of root node.
 > -  If it has no right or left subtrees, then maximum height is one as it has only root element.
@@ -12,7 +12,7 @@
 <!-- <img src = "/Images/height.png" height="300px" width = "400px"> -->
 
 
-### Time Complexity
+## Time Complexity
 > In this case we are recursively calling on the left and right subtrees so the recurrence relation turns out to be<br>
 > T(n) = T(k) + T(n-k-1) + c, where n is total number of nodes , k is number of nodes on one side of tree and remaining n-k-1 nodes on the other side of Parse Tree and c is a constant.<br>
 > We have two cases now
@@ -38,5 +38,5 @@
 >
 > Therefore Time Complexity turns out to be <b>O(n)</b> for this recursive function.<br><br>
 
-### Space Complexity
+## Space Complexity
 > Space Complexity is <b>O(1)</b> as we are not using any auxiliary space for this function, only stack memory is being used for recursive calls.
