@@ -32,7 +32,9 @@ and evaluate and print its truth table
 <br/>
 <br/>
 ![Output](https://user-images.githubusercontent.com/97559428/196759255-5d799c8b-59f4-4d5c-ad7b-098f6533266d.png)
-
+<br/>
+<br/>
+![heapgraph](https://user-images.githubusercontent.com/97559428/197363643-4dac38d4-e0d9-4d2d-87b2-443ba86b2dab.jpg)
 
 
 ## Authors
