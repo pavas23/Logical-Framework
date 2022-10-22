@@ -131,7 +131,6 @@
 
 <img src = "/Test/TestCase2/gprof/gprof4.png" alt = "gprof-img" height = "800px" width = "1000px">
 <img src = "/Test/TestCase2/gprof/gprof5.png" alt = "gprof-img" height = "800px" width = "1000px">
-<br><br>
 
 > The call graph shows how much time was spent in each function and its children. From
 > this information, you can find functions that, while they themselves may not have used
