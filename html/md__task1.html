@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Logical Framework: Member List</title>
+<title>Logical Framework: InfixToPrefix</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_node.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md__task1.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -94,18 +94,45 @@ $(document).ready(function(){initNavTree('class_node.html',''); initResizable();
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Node Member List</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">InfixToPrefix </div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="class_node.html">Node</a>, including all inherited members.</p>
-<table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>data</b> (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>next</b> (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Node</b>() (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Node</b>(char data) (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-</table></div><!-- contents -->
+<div class="textblock"><h1><a class="anchor" id="autotoc_md41"></a>
+Algorithm</h1>
+<blockquote class="doxtable">
+<p >&zwj;</p><ul>
+<li>This Function is used to convert Infix expression to Prefix expression</li>
+<li>It takes input of an Infix expression in the form of a string data type, Then the reversed infix expression is stored in an array ( and '(' is converted to ')' and vice versa).</li>
+<li>Precedence of operators is defined by the precedence char array. Also, a char array named display is created of same length as the infix string and each eleemnt is initalized to -1 in this array.</li>
+<li>Iteration is done through each element of array(reversed string) and if operator is '(' then its directly pushed into stack once found.</li>
+<li>If operator is either &gt; or + or * or ~, then directly push the operator into stack if stack is empty.</li>
+<li>If stack is not empty<ul>
+<li>push the element into the stack provided precedence of current operator is higher than precedence of top element in stack.</li>
+<li>If precedence of top element of stack is greater than equal to current operator and for a non empty stack, then empty the stack and store the elements of stack in display array until the current operator has a higher precedence than the top element of the stack</li>
+</ul>
+</li>
+<li>If top element of stack turns out to be '(' or ')' then current operator would be pushed to stack.</li>
+<li>If operator is ')' then empty the stack till we find '(' and pop this '(' out.</li>
+<li>Add characters to display array</li>
+<li>Finally after iteration on infix expression is done, add all reamining elements of stack in display array</li>
+<li>Now display the reversed display array (since display array has postfix form) to give output of Prefix expression <br  />
+<br  />
+ </li>
+</ul>
+</blockquote>
+<h1><a class="anchor" id="autotoc_md42"></a>
+Time Complexity</h1>
+<blockquote class="doxtable">
+<p >&zwj;Since we are scanning all the characters in the infix string at once so Time complexity for this function comes out to be <b>O(n)</b>, Where n is the size of input infix string. </p>
+</blockquote>
+<h1><a class="anchor" id="autotoc_md43"></a>
+Space Complexity</h1>
+<blockquote class="doxtable">
+<p >&zwj;As we have made arrays of size n so the auxiliary space used is space used by these arrays and stack memory.So the Space Complexity is <b>O(n)</b> for this function. </p>
+</blockquote>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

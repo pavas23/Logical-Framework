@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Logical Framework: Member List</title>
+<title>Logical Framework: PrefixToRootedBinaryParseTree</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_node.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md__task2.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -94,18 +94,40 @@ $(document).ready(function(){initNavTree('class_node.html',''); initResizable();
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Node Member List</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">PrefixToRootedBinaryParseTree </div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="class_node.html">Node</a>, including all inherited members.</p>
-<table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>data</b> (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>next</b> (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Node</b>() (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Node</b>(char data) (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-</table></div><!-- contents -->
+<div class="textblock"><h1><a class="anchor" id="autotoc_md45"></a>
+Algorithm</h1>
+<blockquote class="doxtable">
+<p >&zwj;</p><ul>
+<li>This function prefixToParseTree is used to convert prefix form to Parse tree and returns the root of the Parse Tree.</li>
+<li>It has two inputs, one is prefix string obtained from given infix form and other is a integer pointer pointing to 0 value</li>
+<li>We create a binary tree node for each charecter in prefixInput string and increment the pointer to traverse through the whole string</li>
+<li>If root node contains *,+,&gt; operators so a well formed formula will have both left and right subtrees</li>
+<li>if root node contains '~' means only one side of tree is there which should be right side and root-&gt;left is NULL</li>
+<li>We also make a function printLevelOrderParseTree which is used to print the ParseTree formed level wise.</li>
+<li>This function iterates over the height of the Parse Tree and in each iteration it calls another function printLevelOrderParseTreeHelper.</li>
+<li>printLevelOrderParseTreeHelper function prints each level of the ParseTree</li>
+<li>If it contains only one level i.e only root we directly print it.</li>
+<li>If level is greater than 1, then root is not there in that level, only left and right subtrees are there, we pass level-1 here as current level variable as for the original tree, the level variable was equal to level. But for the subtree the level with reference to the left root and right root will be one less in that subtrees<br  />
+ <br  />
+ </li>
+</ul>
+</blockquote>
+<h1><a class="anchor" id="autotoc_md46"></a>
+Time Complexity</h1>
+<blockquote class="doxtable">
+<p >&zwj;In this case we are scanning through all the characters in the prefix string of length n so Time Complexity is <b>O(n)</b>. </p>
+</blockquote>
+<h1><a class="anchor" id="autotoc_md47"></a>
+Space Complexity</h1>
+<blockquote class="doxtable">
+<p >&zwj;Space complexity is <b>O(1)</b> because we are not using any auxiliary space in this function except for the stack memory for recursive calls. </p>
+</blockquote>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

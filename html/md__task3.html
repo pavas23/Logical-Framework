@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Logical Framework: Member List</title>
+<title>Logical Framework: InorderTraversalOfParseTree</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_node.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md__task3.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -94,18 +94,85 @@ $(document).ready(function(){initNavTree('class_node.html',''); initResizable();
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Node Member List</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">InorderTraversalOfParseTree </div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="class_node.html">Node</a>, including all inherited members.</p>
-<table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>data</b> (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>next</b> (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Node</b>() (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Node</b>(char data) (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-</table></div><!-- contents -->
+<div class="textblock"><h1><a class="anchor" id="autotoc_md49"></a>
+Algorithm</h1>
+<blockquote class="doxtable">
+<p >&zwj;</p><ul>
+<li>The function InorderTraversalOfParseTree is defined and it outputs the infix expression back by in-order traversal.</li>
+<li>It initially prints the left subtree, then root node data and then right subtree.</li>
+<li>It makes a recursive call on left subtree by passing root-&gt;left which is root of left subtree so it will print inorderTraversal for left subtree then once this is done we print root data then we make a recursive call on right subtree which will print inorderTraversal of right subtree and we finally get InOrderTraversal of whole ParseTree</li>
+<li>If right subtree is empty and left is not empty, It will just print the left subtree and root node data.</li>
+<li>If left subtree is empty and right is not empty, It would print, root node data and then right subtree.</li>
+<li>If no subtrees, then only root node data will be printed.</li>
+<li>If no root node data and no subtrees then nothing would be printed.<br  />
+<br  />
+ </li>
+</ul>
+</blockquote>
+<h1><a class="anchor" id="autotoc_md50"></a>
+Time Complexity</h1>
+<blockquote class="doxtable">
+<p >&zwj;In this case we are recursively calling on the left and right subtrees so the recurrence relation turns out to be<br  />
+ T(n) = T(k) + T(n-k-1) + c, where n is total number of nodes , k is number of nodes on one side of tree and remaining n-k-1 nodes on the other side of Parse Tree and c is a constant.<br  />
+ We have two cases now</p><ul>
+<li>If the tree is Skewed tree then ( all nodes are on one side of the tree)<br  />
+<ul>
+<li>then k = 0 <br  />
+</li>
+<li>T(n) = T(0) + T(n-1) + c , as T(0) is a constant let it be d<br  />
+</li>
+<li>T(n) = T(n-1) + (c+d) , let c+d = a which is another constant<br  />
+</li>
+<li>T(n) = T(n-1) + a<br  />
+</li>
+<li>Now on solving this recurrence relation we get,<br  />
+</li>
+<li>T(n-1) = T(n-2) + a<br  />
+</li>
+<li>T(n-2) = T(n-2) + a<br  />
+</li>
+<li>T(n-3) = T(n-4) + a<br  />
+</li>
+<li>and so on....<br  />
+</li>
+<li>T(n) = na <br  />
+</li>
+<li>O(n) is Time complexity for this case<br  />
+</li>
+</ul>
+</li>
+<li>If the given tree is balanced then (equal number of nodes on both sides)<br  />
+<ul>
+<li>T(n) = 2T(n/2) + k <br  />
+</li>
+<li>T(n/2) = 2T(n/4) + k <br  />
+</li>
+<li>T(n/4) = 2T(n/8) + k <br  />
+</li>
+<li>.... and so on <br  />
+</li>
+<li>On solving this recurrence relation we get T(n) = 2^(log(n)) , where log(n) has base 2 <br  />
+</li>
+<li>So T(n) = n <br  />
+</li>
+</ul>
+</li>
+</ul>
+<p >Therefore Time Complexity turns out to be <b>O(n)</b> for this recursive function.<br  />
+<br  />
+ </p>
+</blockquote>
+<h1><a class="anchor" id="autotoc_md51"></a>
+Space Complexity</h1>
+<blockquote class="doxtable">
+<p >&zwj;Space Complexity is <b>O(1)</b> as we are not using any auxiliary space for this function, only stack memory is being used for recursive calls. </p>
+</blockquote>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

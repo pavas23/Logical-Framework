@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Logical Framework: Member List</title>
+<title>Logical Framework: TruthValueOfPropositionalLogic</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_node.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md__task5.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -94,18 +94,52 @@ $(document).ready(function(){initNavTree('class_node.html',''); initResizable();
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Node Member List</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">TruthValueOfPropositionalLogic </div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="class_node.html">Node</a>, including all inherited members.</p>
-<table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>data</b> (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>next</b> (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Node</b>() (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Node</b>(char data) (defined in <a class="el" href="class_node.html">Node</a>)</td><td class="entry"><a class="el" href="class_node.html">Node</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-</table></div><!-- contents -->
+<div class="textblock"><h1><a class="anchor" id="autotoc_md57"></a>
+Algorithm</h1>
+<blockquote class="doxtable">
+<p >&zwj;</p><ul>
+<li>In this firstly, we made a function named takeTruthValueOfPropositionalAtoms() which takes the prefix string as function parameter</li>
+<li>This function is used to take truth value inputs for each propositional atom in the prefix expression from the user</li>
+<li>Finally this function passes the truthString which contains 0s and 1s to the truthValue() function which evaluates the truth value of the given infix expression</li>
+<li>This truthValue function takes the root of the BinaryParseTree, truthString returned by the takeTruthValueOfPropositionalAtoms() function and a integer pointer pointing to 0 value as parameters</li>
+<li>Now in this function we recursively call on the left subtree and right subtree and they will both return the truth values of left and right part and then we see the operator present in root node and evaluate the truth value accordingly.</li>
+<li>Base cases are:<ul>
+<li>If root is NULL then tree is empty so it is True by default.</li>
+<li>If the left and right pointers are NULL, then we can have only atom in root and we return the truth value of that atom</li>
+</ul>
+</li>
+<li>If the left subtree is empty and right subtree has some atoms then only possiblity is that root should have ~ as root data in a well formed formula, so we return the negation of ans returned by right subtree as final truth value for given ParseTree.<br  />
+<br  />
+ </li>
+</ul>
+</blockquote>
+<h1><a class="anchor" id="autotoc_md58"></a>
+Time Complexity</h1>
+<blockquote class="doxtable">
+<p >&zwj;</p><ul>
+<li>For function takeTruthValueOfPropositionalAtoms() the Time Complexity is <b>O(n)</b> as we are scanning through all the atoms.</li>
+<li>For function truthValue() the Time Complexity is also <b>O(n)</b> as we are iterating over the whole string with help of pointer. <br  />
+<br  />
+</li>
+</ul>
+<p ></p>
+</blockquote>
+<h1><a class="anchor" id="autotoc_md59"></a>
+Space Complexity</h1>
+<blockquote class="doxtable">
+<p >&zwj;</p><ul>
+<li>For the function takeTruthValueOfPropositionalAtoms() Space Complexity is <b>O(1)</b> as we have made strings of size n.</li>
+<li>For function truthValue() the Space Complexity is <b>O(1)</b> as we are not using any auxiliary space. <br  />
+<br  />
+ </li>
+</ul>
+</blockquote>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
